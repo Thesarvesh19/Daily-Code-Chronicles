@@ -19,5 +19,3 @@ This greedy approach ensures the pair sums are balanced.
 
 ---
 
-## Example
-**Input:**  
