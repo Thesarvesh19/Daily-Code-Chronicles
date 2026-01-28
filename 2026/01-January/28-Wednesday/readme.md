@@ -1,51 +1,44 @@
 # Minimum Cost Path with Teleportation
 
 This project solves a grid pathfinding problem where you can move normally
-or use limited teleportation to reduce cost.
+or use limited teleportation to reduce the total cost.
 
-## 🧩 Problem Summary
+## Problem Summary
 
 - You are given a 2D grid of integers.
-- You start from the top-left cell `(0,0)`.
-- You want to reach the bottom-right cell.
-- Each move **right or down** adds the cost of the destination cell.
-- You can **teleport at most `k` times**:
-  - Teleport from any cell to any other cell with **value ≤ current cell**
-  - Teleport cost is **0**
+- You start from the top-left cell `(0, 0)`.
+- The goal is to reach the bottom-right cell.
+- You can move only right or down.
+- Each move adds the cost of the destination cell.
+- You can teleport at most `k` times:
+  - You may teleport from any cell to another cell with value less than or equal to the current cell.
+  - Teleporting costs `0`.
 
-The goal is to find the **minimum total cost**.
+The objective is to find the minimum possible cost to reach the destination.
 
----
+## Approach
 
-## 💡 Approach (Simple Explanation)
+- Dynamic Programming is used.
+- `dp[t][i][j]` represents the minimum cost to reach cell `(i, j)` using `t` teleports.
+- For each teleport count:
+  - Teleport transitions are applied first, processed by cell values in descending order.
+  - After that, normal right and down moves are applied.
 
-- We use **Dynamic Programming**.
-- `dp[t][i][j]` stores the minimum cost to reach cell `(i, j)` using `t` teleports.
-- For each teleport layer:
-  1. First apply **teleport transitions** (processed by cell values in descending order)
-  2. Then apply **normal right and down moves**
+This order ensures teleportation does not break the path constraints.
 
-This ensures teleport rules are applied correctly without breaking path order.
+## Complexity
 
----
+- Time complexity: `O(k × m × n)`
+- Space complexity: `O(k × m × n)`
 
-## ⏱️ Complexity
+This solution works efficiently within the given limits.
 
-- **Time:** `O(k × m × n)`
-- **Space:** `O(k × m × n)`
+## Result
 
-Works efficiently within the given constraints.
+- All edge cases are handled.
+- All test cases pass successfully.
+- The solution follows the editorial approach.
 
----
+## Files
 
-## ✅ Result
-
-- Handles all edge cases
-- Passes all test cases
-- Editorial-safe and reliable
-
----
-
-## 📂 Files
-
-- `Solution.java` → main implementation
+- `Solution.java` – main implementation
