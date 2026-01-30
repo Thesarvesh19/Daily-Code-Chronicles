@@ -41,7 +41,7 @@ class Solution:
 
             best[L] = (idx, dist)
 
-        # DP
+        
         dp = [INF] * (n + 1)
         dp[n] = 0
 
