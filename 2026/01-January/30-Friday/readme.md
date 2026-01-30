@@ -22,7 +22,7 @@ The goal is to convert `source` into `target` with **minimum total cost**, or re
 
 ---
 
-## 🛠️ Algorithm Used
+##  Algorithm Used
 
 - **Floyd–Warshall** to compute minimum transformation costs for substrings of the same length.
 - **Dynamic Programming** to compute the minimum cost to convert the full string.
