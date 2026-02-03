@@ -1,4 +1,4 @@
-class Solution:
+class Solution: 
     def isTrionic(self, nums):
         n = len(nums)
         i = 1
