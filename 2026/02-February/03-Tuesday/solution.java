@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
     public boolean isTrionic(int[] nums) {
         int n = nums.length;
         int i = 1;
