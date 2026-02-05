@@ -56,7 +56,11 @@ class Solution {
         return result;
     }
 }
-Python Solution
+
+## Python Solution
+
+```Python Solution
+
 class Solution:
     def constructTransformedArray(self, nums):
         n = len(nums)
@@ -70,7 +74,9 @@ class Solution:
                 result[i] = nums[new_index]
 
         return result
-Complexity
+
+
+## Complexity
 Time: O(n)
 
 Space: O(n)
