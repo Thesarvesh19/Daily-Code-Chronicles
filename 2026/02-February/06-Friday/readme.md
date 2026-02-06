@@ -2,7 +2,7 @@
 
 This repository contains a Python solution for the LeetCode problem  
 **"Minimum Removals to Balance Array"**.
-
+ 
 ## Problem Summary
 An array is considered **balanced** if the maximum element is at most  
 `k` times the minimum element.
