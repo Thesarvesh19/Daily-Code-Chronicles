@@ -19,7 +19,6 @@ class Solution:
         left = 0
         max_window = 1
 
-        # Two pointer sliding window
         for right in range(n):
             while nums[right] > nums[left] * k:
                 left += 1
