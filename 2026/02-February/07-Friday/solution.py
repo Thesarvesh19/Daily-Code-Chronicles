@@ -14,7 +14,7 @@ Approach:
 Time Complexity: O(n)
 Space Complexity: O(1)
 """
-
+ 
 class Solution:
     def minimumDeletions(self, s: str) -> int:
         b_count = 0
