@@ -19,7 +19,7 @@
  * Space Complexity: O(1)
  */
 class Solution {
-
+ 
     public int minimumDeletions(String s) {
         int bCount = 0;      // number of 'b's seen so far
         int deletions = 0;   // minimum deletions needed
