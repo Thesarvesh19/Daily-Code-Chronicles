@@ -1,5 +1,5 @@
 # Minimum Deletions to Balance a and b
-
+ 
 ## Problem Description
 You are given a string that contains only the characters 'a' and 'b'.
 Your task is to determine the minimum number of deletions required so
