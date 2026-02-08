@@ -4,7 +4,7 @@
  * A binary tree is balanced if the height difference between
  * left and right subtrees of every node is at most 1.
  */
-
+ 
 #include <stdlib.h>
 #include <stdbool.h>
 
