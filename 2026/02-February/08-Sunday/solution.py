@@ -10,7 +10,7 @@ class Solution:
         return self._height(root) != -1
 
     def _height(self, node):
-        if not node:
+        if not node: 
             return 0
 
         left_height = self._height(node.left)
