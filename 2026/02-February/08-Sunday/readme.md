@@ -1,5 +1,5 @@
 # Balanced Binary Tree
-
+ 
 This repository contains solutions to determine whether a binary tree
 is height-balanced.
 
