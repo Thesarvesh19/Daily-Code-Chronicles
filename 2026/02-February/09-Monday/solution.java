@@ -15,7 +15,7 @@
 
 import java.util.*;
 
-class Solution {
+class Solution { 
 
     public TreeNode balanceBST(TreeNode root) {
         List<Integer> inorder = new ArrayList<>();
