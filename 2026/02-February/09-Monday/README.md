@@ -4,7 +4,7 @@
 
 Given the root of a Binary Search Tree (BST), the task is to return a **balanced BST**
 containing the same node values.
-
+ 
 A BST is considered **balanced** if for every node, the depth difference between
 its left and right subtrees is **at most 1**.
 
