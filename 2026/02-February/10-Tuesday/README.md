@@ -8,7 +8,7 @@ Given an integer array `nums`, a subarray is called **balanced** if:
 Return the length of the **longest balanced subarray**.
 
 ---
-
+ 
 ## Approach
 
 ### Brute Force with Distinct Tracking
