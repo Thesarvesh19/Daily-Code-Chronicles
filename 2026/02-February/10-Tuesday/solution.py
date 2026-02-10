@@ -5,7 +5,7 @@ A subarray is balanced if the number of distinct even numbers
 equals the number of distinct odd numbers.
 """
 
-class Solution:
+class Solution: 
     def longestBalanced(self, nums):
         n = len(nums)
         max_len = 0
