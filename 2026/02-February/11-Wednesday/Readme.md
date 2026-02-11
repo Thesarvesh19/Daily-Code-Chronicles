@@ -1,6 +1,6 @@
-# 3719. Longest Balanced Subarray II
+#  Longest Balanced Subarray II
 
-## 🧩 Problem Statement
+##  Problem Statement
 
 A subarray is called **balanced** if the number of distinct odd numbers equals the number of distinct even numbers.
 
@@ -12,7 +12,7 @@ Return the length of the longest balanced subarray.
 
 ---
 
-## 💡 Approach
+##  Approach
 
 ### Key Insight
 
@@ -34,7 +34,7 @@ the subarray between those indices is balanced.
 
 ---
 
-## 🏗 Data Structures Used
+##  Data Structures Used
 
 - `HashMap` → track last occurrence
 - `Segment Tree` → range add + prefix search
@@ -42,14 +42,14 @@ the subarray between those indices is balanced.
 
 ---
 
-## ⏱ Complexity
+##  Complexity
 
 - **Time Complexity:** O(n log n)
 - **Space Complexity:** O(n)
 
 ---
 
-## 🚀 Why Segment Tree?
+##  Why Segment Tree?
 
 Distinct counting is not reversible like prefix sums.
 
