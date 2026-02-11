@@ -63,6 +63,6 @@ Segment Tree enables:
 
 ---
 
-## 🏆 Result
+##  Result
 
 Efficiently handles up to 10^5 elements without TLE.
