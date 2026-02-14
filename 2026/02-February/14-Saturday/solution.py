@@ -11,4 +11,5 @@ class Solution:
                     dp[r + 1][c + 1] += overflow
                     dp[r][c] = 1.0
 
+    
         return min(1.0, dp[query_row][query_glass])
