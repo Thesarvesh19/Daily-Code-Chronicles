@@ -15,5 +15,5 @@ class Solution {
         }
 
         return Math.min(1.0, dp[query_row][query_glass]);
-    }
+    } 
 }
