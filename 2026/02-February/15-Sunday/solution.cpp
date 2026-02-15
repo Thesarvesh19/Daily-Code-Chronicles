@@ -1,7 +1,7 @@
 // solution.cpp
 // Problem: Add Binary
 // Approach: Simulate binary addition from right to left using carry
-
+ 
 #include <string>
 #include <algorithm>
 using namespace std;
