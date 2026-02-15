@@ -1,7 +1,7 @@
 # Add Binary
 
 ##  Problem Statement
-
+ 
 Given two binary strings `a` and `b`, return their sum as a binary string.
 
 You must simulate binary addition without converting the strings to integers directly.
