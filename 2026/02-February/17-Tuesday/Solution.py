@@ -8,3 +8,4 @@ class Solution:
                     result.append(f"{hour}:{minute:02d}")
 
         return result
+ 
