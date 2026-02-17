@@ -1,6 +1,6 @@
 class Solution {
     fun readBinaryWatch(turnedOn: Int): List<String> {
-        val result = mutableListOf<String>()
+        val result = mutableListOf<String>() 
 
         for (hour in 0..11) {
             for (minute in 0..59) {
