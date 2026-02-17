@@ -9,7 +9,7 @@ A binary watch has:
 Each LED represents a binary digit (0 or 1).  
 
 Given an integer `turnedOn`, return all possible valid times that have exactly `turnedOn` LEDs turned on.
-
+ 
 ## Rules
 
 1. The hour must not contain a leading zero.  
