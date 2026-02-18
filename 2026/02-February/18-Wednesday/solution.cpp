@@ -1,5 +1,5 @@
 /*
-Problem: Binary Number with Alternating Bits
+Problem: Binary Number with Alternating Bits 
 
 Given a positive integer n, return true if it has alternating bits.
 Otherwise, return false.
