@@ -1,6 +1,6 @@
 # Count Binary Substrings
 
-## Problem Statement
+## Problem Statement 
 
 Given a string `s` containing only characters '0' and '1', return the number of non-empty substrings that have:
 
