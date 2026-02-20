@@ -6,7 +6,7 @@ A special binary string:
 2. Every prefix has at least as many '1's as '0's.
 
 We can swap two consecutive special substrings.
-Return the lexicographically largest possible string.
+Return the lexicographically largest possible string. 
 
 ---
 
