@@ -12,7 +12,7 @@ class Solution {
                 String inner = makeLargestSpecial(s.substring(start + 1, i));
                 parts.add("1" + inner + "0");
                 start = i + 1;
-            }
+            } 
         }
 
         parts.sort(Collections.reverseOrder());
