@@ -8,7 +8,7 @@ A special binary string:
 We can swap two consecutive special substrings.
 The goal is to obtain the lexicographically largest possible string.
 
----
+--- 
 
 ## Approach
 
