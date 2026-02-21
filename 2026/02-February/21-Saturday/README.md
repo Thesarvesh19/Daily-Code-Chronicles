@@ -9,7 +9,7 @@ A set bit means a bit with value 1 in the binary representation of a number.
 Example:
 Input: left = 6, right = 10
 Output: 4
-
+ 
 ## Approach
 
 1. Iterate through all numbers from left to right.
