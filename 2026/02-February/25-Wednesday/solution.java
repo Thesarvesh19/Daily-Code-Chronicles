@@ -10,7 +10,7 @@ class Solution {
         }
 
         // Sort based on:
-        // 1. Number of set bits
+        // 1. Number of set bits 
         // 2. Numeric value if bit counts are equal
         Arrays.sort(temp, (a, b) -> {
             int bitCompare = Integer.bitCount(a) - Integer.bitCount(b);
