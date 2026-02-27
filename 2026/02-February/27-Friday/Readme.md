@@ -1,6 +1,6 @@
 # Minimum Operations to Equalize Binary String
 
-## 🧩 Problem Summary
+##  Problem Summary
 
 You are given a binary string `s` and an integer `k`.
 
@@ -14,7 +14,7 @@ If impossible, return -1.
 
 ---
 
-## 💡 Approach
+##  Approach
 
 Instead of simulating string operations directly, we model the problem as:
 
@@ -34,7 +34,7 @@ We perform a **BFS over zero counts** from initial count to 0.
 
 ---
 
-## ⚙️ Optimization Used
+##  Optimization Used
 
 - Two `TreeSet`s for parity separation
 - Avoid revisiting states
@@ -46,7 +46,7 @@ This ensures we:
 
 ---
 
-## ⏱ Time Complexity
+##  Time Complexity
 
 O(n log n)
 
@@ -56,7 +56,7 @@ Because:
 
 ---
 
-## 📦 Space Complexity
+##  Space Complexity
 
 O(n)
 
