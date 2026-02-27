@@ -19,7 +19,7 @@ class Solution {
                 cnt0++;
             }
         }
-
+ 
         // Remove starting state
         ts[cnt0 % 2].remove(cnt0);
 
