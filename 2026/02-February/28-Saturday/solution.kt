@@ -1,5 +1,5 @@
 class Solution {
-    fun concatenatedBinary(n: Int): Int {
+    fun concatenatedBinary(n: Int): Int { 
         val MOD = 1_000_000_007
         var result = 0L
         var length = 0
