@@ -8,7 +8,7 @@ class Solution:
         for row in grid:
             count = 0
             for val in reversed(row):
-                if val == 0:
+                if val == 0: 
                     count += 1
                 else:
                     break
