@@ -5,7 +5,7 @@ class Solution {
         val length = (1 shl n) - 1
         val mid = (length / 2) + 1
 
-        return when {
+        return when { 
             k == mid -> '1'
             k < mid -> findKthBit(n - 1, k)
             else -> {
