@@ -5,7 +5,7 @@ class Solution {
         }
 
         int length = (1 << n) - 1;
-        int mid = (length / 2) + 1;
+        int mid = (length / 2) + 1; 
 
         if (k == mid) {
             return '1';
