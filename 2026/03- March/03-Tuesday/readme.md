@@ -7,7 +7,7 @@ Given two positive integers n and k, a binary string Sn is formed as follows:
 S1 = "0"
 
 Si = Si-1 + "1" + reverse(invert(Si-1)) for i > 1
-
+ 
 Return the kth bit in Sn.
 
 Constraints:
