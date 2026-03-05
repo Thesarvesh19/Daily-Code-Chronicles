@@ -12,7 +12,7 @@ For example:
 Your task is to return the **minimum number of operations** required to make the string alternating.
 
 ## Examples
-
+ 
 ### Example 1
 Input:
 
