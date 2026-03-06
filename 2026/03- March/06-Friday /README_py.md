@@ -8,7 +8,7 @@ A contiguous segment means that all `1`s appear together without being separated
 ## Example
 
 Input:
-
+ 
 s = "1001"
 
 
