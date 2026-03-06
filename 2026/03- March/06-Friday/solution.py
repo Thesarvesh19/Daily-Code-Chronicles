@@ -4,7 +4,7 @@ class Solution:
 
         for c in s:
             if c == '0':
-                seen_zero = True
+                seen_zero = True 
             elif seen_zero:
                 return False
 
