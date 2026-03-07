@@ -3,7 +3,7 @@ class Solution:
         n = len(s)
         s = s + s
 
-        alt1 = []
+        alt1 = [] 
         alt2 = []
 
         for i in range(len(s)):
