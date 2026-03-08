@@ -6,7 +6,7 @@ Given an array of strings `nums` containing `n` **unique binary strings**, each 
 
 If there are multiple possible answers, you may return **any one of them**.
 
-### Example 1
+### Example 1 
 
 Input:
 
