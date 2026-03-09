@@ -1,7 +1,7 @@
 # 3129. Find All Possible Stable Binary Arrays I
 
 ## Problem
-You are given three integers:
+You are given three integers: 
 
 - zero → number of 0s
 - one → number of 1s
