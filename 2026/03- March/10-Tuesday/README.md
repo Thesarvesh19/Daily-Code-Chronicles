@@ -14,7 +14,7 @@ A binary array is called **stable** if:
 2. The number of occurrences of `1` is exactly `one`.
 3. Every subarray with length greater than `limit` must contain both `0` and `1`.
 
-Return the total number of stable binary arrays.
+Return the total number of stable binary arrays. 
 
 Since the answer may be very large, return it modulo **10⁹ + 7**.
 
