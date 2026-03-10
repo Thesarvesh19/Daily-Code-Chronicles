@@ -6,7 +6,7 @@ class Solution {
 public:
     int numberOfStableArrays(int zero, int one, int limit) {
         const int MOD = 1000000007;
-
+ 
         vector<vector<vector<long long>>> dp(
             zero + 1, vector<vector<long long>>(one + 1, vector<long long>(2, 0)));
 
