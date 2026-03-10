@@ -14,7 +14,7 @@ A binary array is considered stable if:
 2. It contains exactly `one` number of 1s.
 3. Every subarray with length greater than `limit` must contain both 0 and 1.
 
-Return the total number of stable arrays.
+Return the total number of stable arrays. 
 
 Since the answer can be very large, return it modulo **10^9 + 7**.
 
