@@ -10,7 +10,7 @@ class Solution:
             while parent[x] != x:
                 parent[x] = parent[parent[x]]
                 x = parent[x]
-            return x
+            return x 
 
         def union(a, b):
             ra, rb = find(a), find(b)
