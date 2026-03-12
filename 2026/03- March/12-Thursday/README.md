@@ -8,7 +8,7 @@ You are given:
 - A list of edges where each edge is represented as:
 
 
-[u, v, s, m]
+[u, v, s, m] 
 
 
 Where:
