@@ -14,7 +14,7 @@ You are given:
 Where:
 
 - `u` and `v` → endpoints of the edge
-- `s` → strength of the edge
+- `s` → strength of the edge 
 - `m` → mandatory flag  
   - `1` → mandatory edge
   - `0` → optional edge
