@@ -6,7 +6,7 @@ bool canFinish(long long time, int mountainHeight, int* workerTimes, int workers
 
     for (int i = 0; i < workers; i++) {
         long long w = workerTimes[i];
-
+ 
         long long val = (2 * time) / w;
         long long x = (long long)((sqrt(1.0 + 4.0 * val) - 1) / 2);
 
