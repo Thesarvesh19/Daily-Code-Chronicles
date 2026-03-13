@@ -5,7 +5,7 @@ class Solution:
     def minNumberOfSeconds(self, mountainHeight: int, workerTimes: List[int]) -> int:
         
         def can_finish(time):
-            total = 0
+            total = 0 
             
             for w in workerTimes:
                 val = (2 * time) // w
