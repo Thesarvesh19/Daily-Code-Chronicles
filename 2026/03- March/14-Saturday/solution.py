@@ -6,7 +6,7 @@ class Solution:
             if len(result) >= k:
                 return
 
-            if len(current) == n:
+            if len(current) == n: 
                 result.append(current)
                 return
 
