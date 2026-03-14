@@ -4,7 +4,7 @@
 A **happy string** is a string that:
 
 - Consists only of characters `['a', 'b', 'c']`
-- No two adjacent characters are the same
+- No two adjacent characters are the same 
 
 Given integers `n` and `k`, return the **k-th happy string of length n in lexicographical order**.  
 If fewer than `k` happy strings exist, return an empty string.
