@@ -1,7 +1,7 @@
 class Fancy:
 
     def __init__(self):
-        self.MOD = 10**9 + 7
+        self.MOD = 10**9 + 7 
         self.seq = []
         self.mul = 1
         self.add = 0
