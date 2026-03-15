@@ -7,7 +7,7 @@ typedef struct {
     ll *seq;
     int size;
     ll mul;
-    ll add;
+    ll add; 
 } Fancy;
 
 ll modPow(ll base, ll exp) {
