@@ -9,7 +9,7 @@ Operations:
 - append(val)
 - addAll(inc)
 - multAll(m)
-- getIndex(idx)
+- getIndex(idx) 
 
 Return values modulo **1e9 + 7**.
 
