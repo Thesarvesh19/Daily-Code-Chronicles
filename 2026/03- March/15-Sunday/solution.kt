@@ -6,7 +6,7 @@ class Fancy {
     private var add = 0L
 
     fun append(value: Int) {
-        val inv = modPow(mul, MOD-2)
+        val inv = modPow(mul, MOD-2) 
         var v = (value - add) % MOD
         if (v < 0) v += MOD
         v = (v * inv) % MOD
