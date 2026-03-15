@@ -1,5 +1,5 @@
 # Fancy Sequence API – C++ Implementation
-
+ 
 ## Problem Overview
 
 Implement a sequence that supports the following operations efficiently:
