@@ -4,7 +4,7 @@
 Design a data structure that supports the following operations efficiently:
 
 - `append(val)` → append value to sequence
-- `addAll(inc)` → add `inc` to all elements
+- `addAll(inc)` → add `inc` to all elements 
 - `multAll(m)` → multiply all elements by `m`
 - `getIndex(idx)` → return value at index `idx`
 
