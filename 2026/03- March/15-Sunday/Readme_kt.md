@@ -1,4 +1,4 @@
-# Fancy Sequence API – Kotlin Implementation
+ # Fancy Sequence API – Kotlin Implementation
 
 ## Problem Description
 
