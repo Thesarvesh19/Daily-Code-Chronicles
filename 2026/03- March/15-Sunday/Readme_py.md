@@ -4,7 +4,7 @@
 Design an API that supports the following operations efficiently:
 
 - append(val)
-- addAll(inc)
+- addAll(inc) 
 - multAll(m)
 - getIndex(idx)
 
