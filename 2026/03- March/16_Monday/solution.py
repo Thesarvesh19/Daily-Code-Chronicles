@@ -2,7 +2,7 @@ from typing import List
 
 class Solution:
     def getBiggestThree(self, grid: List[List[int]]) -> List[int]:
-        m, n = len(grid), len(grid[0])
+        m, n = len(grid), len(grid[0]) 
         sums = set()
 
         # single cells (area 0 rhombus)
