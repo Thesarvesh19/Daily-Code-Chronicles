@@ -4,7 +4,7 @@
 
 You are given an `m x n` integer matrix `grid`.
 
-A **rhombus sum** is the sum of the elements that form the **border of a rhombus shape** in the grid. The rhombus is a square rotated by 45° with each corner centered on a grid cell.
+A **rhombus sum** is the sum of the elements that form the **border of a rhombus shape** in the grid. The rhombus is a square rotated by 45° with each corner centered on a grid cell. 
 
 Return the **three largest distinct rhombus sums** in descending order.  
 If fewer than three distinct sums exist, return all of them.
