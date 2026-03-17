@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Solution {
     public int largestSubmatrix(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
-
+ 
         // Build heights
         for (int i = 1; i < m; i++) {
             for (int j = 0; j < n; j++) {
