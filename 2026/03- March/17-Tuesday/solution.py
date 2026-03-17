@@ -14,5 +14,5 @@ class Solution:
             row.sort(reverse=True)
             for j in range(n):
                 max_area = max(max_area, row[j] * (j + 1))
-        
+         
         return max_area
