@@ -5,7 +5,7 @@ Given a binary matrix, you can rearrange columns in any order.
 
 Return the largest possible area of a submatrix consisting only of 1's.
 
----
+--- 
 
 ##  Approach
 
