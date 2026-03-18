@@ -1,6 +1,6 @@
 class Solution {
     public int countSubmatrices(int[][] grid, int k) {
-        int m = grid.length;
+        int m = grid.length; 
         int n = grid[0].length;
         
         int[] colSum = new int[n];
