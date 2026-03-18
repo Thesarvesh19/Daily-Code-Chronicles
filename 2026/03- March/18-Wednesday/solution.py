@@ -1,7 +1,7 @@
 class Solution:
     def countSubmatrices(self, grid, k):
         m, n = len(grid), len(grid[0])
-        
+         
         col_sum = [0] * n
         count = 0
         
