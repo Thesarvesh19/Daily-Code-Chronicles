@@ -8,7 +8,7 @@ int countSubmatrices(int** grid, int gridSize, int* gridColSize, int k) {
     int* colSum = (int*)calloc(n, sizeof(int));
     int count = 0;
  
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < m; i++) { 
         int rowPrefix = 0;
 
         for (int j = 0; j < n; j++) {
