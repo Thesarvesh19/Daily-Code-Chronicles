@@ -9,7 +9,7 @@ int countSubmatrices(int** grid, int gridSize, int* gridColSize, int k) {
     int count = 0; 
  
     for (int i = 0; i < m; i++) { 
-        int rowPrefix = 0;
+        int rowPrefix = 0; 
 
         for (int j = 0; j < n; j++) {
             // Update column sum
