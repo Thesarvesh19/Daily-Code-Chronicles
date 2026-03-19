@@ -6,7 +6,7 @@ class Solution:
         prefix_sum = [[0] * (n + 1) for _ in range(m + 1)]
         prefix_x = [[0] * (n + 1) for _ in range(m + 1)]
         
-        # build prefix arrays
+        # build prefix arrays 
         for i in range(m):
             for j in range(n):
                 val = 0
