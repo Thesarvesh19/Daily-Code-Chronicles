@@ -1,11 +1,11 @@
 # 3212. Count Submatrices With Equal Frequency of X and Y
 
-## 🧩 Problem Summary
+##  Problem Summary
 
 Given a 2D grid containing:
 - 'X'
 - 'Y'
-- '.'
+- '.' 
 
 Count the number of submatrices that:
 1. Include the top-left cell `(0,0)`
@@ -14,9 +14,9 @@ Count the number of submatrices that:
 
 ---
 
-## 💡 Approach
+##  Approach
 
-### 🔁 Transformation
+###  Transformation
 Convert grid values:
 - 'X' → +1
 - 'Y' → -1
@@ -28,7 +28,7 @@ Now:
 
 ---
 
-### 📊 Prefix Sum Technique
+###  Prefix Sum Technique
 
 We compute:
 - `prefix_sum[i][j]`: sum of values from (0,0) to (i,j)
@@ -44,14 +44,14 @@ For each cell `(i, j)`:
 
 ---
 
-## ⚡ Complexity
+##  Complexity
 
 - Time: **O(m × n)**
 - Space: **O(m × n)**
 
 ---
 
-## 🧪 Example
+##  Example
 
 Input:
 
