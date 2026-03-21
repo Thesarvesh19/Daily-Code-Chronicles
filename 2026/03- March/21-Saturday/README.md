@@ -5,7 +5,7 @@ You are given an `m x n` integer matrix `grid`, and three integers `x`, `y`, and
 
 - `(x, y)` represents the top-left corner of a square submatrix.
 - `k` represents the size of the submatrix.
-
+ 
 ###  Task
 Reverse the submatrix **vertically** (i.e., flip rows within the submatrix).
 
