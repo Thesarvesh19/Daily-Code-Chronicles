@@ -3,7 +3,7 @@ class Solution:
         m, n = len(grid), len(grid[0])
         ans = []
 
-        for i in range(m - k + 1):
+        for i in range(m - k + 1): 
             row = []
             for j in range(n - k + 1):
                 vals = []
