@@ -11,7 +11,7 @@ class Solution:
         # First column
         for i in range(1, m):
             max_dp[i][0] = min_dp[i][0] = max_dp[i-1][0] * grid[i][0]
-        
+         
         # First row
         for j in range(1, n):
             max_dp[0][j] = min_dp[0][j] = max_dp[0][j-1] * grid[0][j]
