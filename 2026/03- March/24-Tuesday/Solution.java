@@ -8,7 +8,7 @@ class Solution {
         
         // Flatten grid
         int idx = 0;
-        for (int[] row : grid) {
+        for (int[] row : grid) { 
             for (int val : row) {
                 arr[idx++] = val;
             }
