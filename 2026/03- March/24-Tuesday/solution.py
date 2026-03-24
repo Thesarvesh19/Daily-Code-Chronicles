@@ -11,7 +11,7 @@ class Solution:
         size = len(arr)
         
         # Prefix product
-        prefix = [1] * size
+        prefix = [1] * size 
         for i in range(1, size):
             prefix[i] = (prefix[i - 1] * arr[i - 1]) % MOD
         
