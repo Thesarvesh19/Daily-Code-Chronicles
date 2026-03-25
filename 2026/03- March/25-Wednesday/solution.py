@@ -6,7 +6,7 @@ class Solution:
         total = sum(sum(row) for row in grid)
         
         # If total is odd, cannot split equally
-        if total % 2 != 0:
+        if total % 2 != 0: 
             return False
         
         target = total // 2
