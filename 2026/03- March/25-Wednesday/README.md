@@ -11,7 +11,7 @@ such that:
 
 - both resulting sections are non-empty
 - the sum of elements in both sections is equal
-
+ 
 Return true if such a partition exists, otherwise false.
 
 ---
