@@ -1,3 +1,4 @@
+Updated documentation
 # Grid Partition with Equal Sum
 
 ## Problem
@@ -36,4 +37,4 @@ Given an m x n grid of positive integers, determine if it is possible to make on
 - Space: O(m × n)
 
 ---
-# fixing github contribution graph
+
