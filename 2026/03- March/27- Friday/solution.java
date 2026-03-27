@@ -1,3 +1,4 @@
+//updated
 class Solution {
     public boolean areSimilar(int[][] mat, int k) {
         int m = mat.length;
