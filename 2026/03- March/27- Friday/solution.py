@@ -1,3 +1,4 @@
+#updated and short code
 class Solution:
     def areSimilar(self, mat, k):
         m = len(mat)
