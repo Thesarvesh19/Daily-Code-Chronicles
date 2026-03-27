@@ -1,40 +1,68 @@
-Updated documentation
 # Grid Partition with Equal Sum
 
 ## Problem
-Given an m x n grid of positive integers, determine if it is possible to make one horizontal or vertical cut such that:
+Given a 2D grid of integers, determine whether it is possible to split the grid into two parts such that:
 
-- Both sections are non-empty
-- Their sums are equal OR can be made equal by removing at most one cell
-- The remaining section must stay connected
+- The sum of elements in both parts is equal
+- The split can be either horizontal or vertical
+
+Additionally, in some cases, removing exactly one element from either side is allowed to balance the sums.
 
 ---
 
 ## Approach
 
-1. Try all possible horizontal cuts
-2. Try all possible vertical cuts (by transposing grid)
-3. Maintain:
-   - Running sums (s1, s2)
-   - Frequency maps for both parts
-4. If sums are not equal:
-   - Find difference
-   - Check if a cell with that value exists in the larger section
-   - Ensure removing it does not break connectivity
+We solve the problem in two steps:
+
+### 1. Horizontal Split
+- Traverse row by row
+- Maintain:
+  - `s1` → sum of top part
+  - `s2` → sum of bottom part
+- Use hashmaps to store frequency of elements in both parts
+
+At each possible cut:
+- If `s1 == s2` → valid partition found
+- Otherwise:
+  - Check if removing one element (difference) can balance the sums
 
 ---
 
-## Key Observations
+### 2. Vertical Split
+- Instead of writing separate logic, we **transpose the grid**
+- Apply the same function again
 
-- If section is 2D → always connected after removal
-- If section is 1D → removal must be from edge
+This avoids code duplication and keeps the solution clean
+
+---
+
+## Key Idea
+
+At every partition:
+- Either sums match directly  
+- Or can be made equal by removing one element equal to the difference
+
+Hashmaps help us quickly check if such an element exists
 
 ---
 
 ## Complexity
 
-- Time: O(m × n)
-- Space: O(m × n)
+Time: O(m * n)  
+Space: O(m * n)
 
 ---
 
+## Why This Works
+
+- We process the grid only once per direction
+- Efficient lookups using hashmap
+- Avoid brute force checking of all partitions
+
+---
+
+## Implementation
+
+- Python 
+
+The same logic can be extended to other languages if needed
