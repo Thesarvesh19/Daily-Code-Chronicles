@@ -1,5 +1,5 @@
 # Grid Partition with Equal Sum
-
+ 
 ## Problem
 Given a 2D grid of integers, determine whether it is possible to split the grid into two parts such that:
 
