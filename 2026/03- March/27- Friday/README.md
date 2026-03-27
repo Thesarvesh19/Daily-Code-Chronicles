@@ -23,17 +23,34 @@ Otherwise:
 - For even rows → left shift
 - For odd rows → right shift
 
-Compare shifted row with original row.
+For each row:
+- Compute the expected shifted position
+- Compare with original row directly without creating full copies
 
 ---
 
 ## Complexity
 
 Time: O(m * n)  
-Space: O(n)
+Space: O(1)
 
 ---
 
 ## Key Insight
 
 If k % n == 0 → matrix always remains same
+
+We do not actually simulate k operations.
+We only check final positions using modular arithmetic.
+
+---
+
+## Implementations
+
+- Python
+- Java
+- Kotlin
+- C
+- C++
+
+All implementations follow the same optimized logic.
