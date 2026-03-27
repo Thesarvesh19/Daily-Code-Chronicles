@@ -24,8 +24,8 @@ Otherwise:
 - For odd rows → right shift
 
 For each row:
-- Compute the expected shifted position
-- Compare with original row directly without creating full copies
+- Compute the expected shifted position using modular arithmetic
+- Compare it directly with the original row
 
 ---
 
@@ -40,17 +40,20 @@ Space: O(1)
 
 If k % n == 0 → matrix always remains same
 
-We do not actually simulate k operations.
-We only check final positions using modular arithmetic.
+We do not simulate k operations.
+We directly check final positions using modulo logic.
 
 ---
 
 ## Implementations
 
-- Python
-- Java
-- Kotlin
-- C
-- C++
+This repository contains solutions in multiple languages:
 
-All implementations follow the same optimized logic.
+- Python (`solution.py`)
+- Java (`solution.java`)
+- Kotlin (`solution.kt`)
+- C (`solution.c`)
+- C++ (`solution.cpp`)
+- JavaScript (`solution.js`)
+
+All implementations follow the same optimized approach.
