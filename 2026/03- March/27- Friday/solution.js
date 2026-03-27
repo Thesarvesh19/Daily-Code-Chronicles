@@ -1,3 +1,4 @@
+//updated 
 class Solution {
     areSimilar(mat, k) {
         const m = mat.length;
