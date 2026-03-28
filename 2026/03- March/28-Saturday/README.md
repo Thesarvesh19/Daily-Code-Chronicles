@@ -1,3 +1,4 @@
+
 # Find the String with LCP
 
 ## Problem
