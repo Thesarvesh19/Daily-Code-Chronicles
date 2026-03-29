@@ -1,4 +1,4 @@
-# Check if Strings Can be Made Equal With Operations I
+# Check if Strings Can be Made Equal With Operations 
 
 ## Problem
 You are given two strings `s1` and `s2` of length 4.
