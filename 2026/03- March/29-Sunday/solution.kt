@@ -9,3 +9,4 @@ class Solution {
         return s1Even.contentEquals(s2Even) && s1Odd.contentEquals(s2Odd)
     }
 }
+//updated code
