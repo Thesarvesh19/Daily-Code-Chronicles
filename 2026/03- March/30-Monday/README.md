@@ -3,7 +3,7 @@
 ## Problem
 
 You are given two strings `s1` and `s2` of the same length.
-
+ 
 You can perform an operation any number of times:
 - Choose two indices `i` and `j` such that `j - i` is even
 - Swap characters at those indices
