@@ -2,7 +2,7 @@ class Solution:
     def checkStrings(self, s1: str, s2: str) -> bool:
         even = [0] * 26
         odd = [0] * 26
-
+ 
         for i in range(len(s1)):
             if i % 2 == 0:
                 even[ord(s1[i]) - ord('a')] += 1
