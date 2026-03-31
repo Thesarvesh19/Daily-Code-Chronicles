@@ -2,7 +2,7 @@
 
 ## Problem
 You are given two strings:
-- `str1` (length n) consisting of 'T' and 'F'
+- `str1` (length n) consisting of 'T' and 'F' 
 - `str2` (length m)
 
 You need to construct a string `word` of length `n + m - 1` such that:
