@@ -1,5 +1,5 @@
 import java.util.*;
-
+ 
 class Solution {
     public String generateString(String str1, String str2) {
         int n = str1.length(), m = str2.length();
