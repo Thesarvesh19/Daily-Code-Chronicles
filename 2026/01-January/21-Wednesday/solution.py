@@ -15,3 +15,4 @@ class Solution:
                 ans.append(n - (1 << (count - 1)))
 
         return ans
+#update
