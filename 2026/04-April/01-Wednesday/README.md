@@ -2,7 +2,7 @@
 
 ## Problem Summary
 We are given:
-- Positions of robots
+- Positions of robots 
 - Their health values
 - Their movement directions (L or R)
 
