@@ -1,7 +1,7 @@
 # 2751. Robot Collisions
 
 ## Problem Summary
-We are given:
+We are given: 
 - Positions of robots
 - Their health values
 - Their movement directions (L or R)
