@@ -1,3 +1,4 @@
+#updated 
 class Solution:
     def minBitwiseArray(self, nums):
         ans = []
@@ -16,3 +17,4 @@ class Solution:
             ans.append(res)
             
         return ans
+#updated
