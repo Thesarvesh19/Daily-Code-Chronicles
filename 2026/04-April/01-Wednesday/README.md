@@ -1,7 +1,7 @@
 # 2751. Robot Collisions
 
 ## Problem Summary
-We are given: 
+We are given:
 - Positions of robots
 - Their health values
 - Their movement directions (L or R)
@@ -21,28 +21,36 @@ We need to return the health of surviving robots in the original order.
 Only robots moving **right (R)** can collide with robots moving **left (L)**.
 
 ### Steps
-1. Combine all robot data:
+1. Combine robot data:
    - position, health, direction, original index
 
 2. Sort robots by position
 
 3. Use a stack:
    - Push robots moving right
-   - For robots moving left, resolve collisions with stack
+   - For robots moving left, resolve collisions
 
 4. Collision rules:
    - If right < left → right removed, left health -1
    - If right > left → left removed, right health -1
    - If equal → both removed
 
-5. Collect remaining robots and sort by original index
+5. Sort survivors by original index and return their health
 
 ---
 
 ## Complexity
 
-- Time: O(n log n) (sorting)
+- Time: O(n log n)
 - Space: O(n)
+
+---
+
+## Java Solution
+See `solution.java`
+
+## Python Solution
+See `solution.py`
 
 ---
 
@@ -57,11 +65,3 @@ Output:
 [14]
 
 ---
-
-## Key Insight
-
-This is similar to:
-- Asteroid collision problem
-- Stack-based simulation problems
-
-We simulate only meaningful collisions using a stack.
