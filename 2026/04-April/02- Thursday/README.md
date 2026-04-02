@@ -1,6 +1,6 @@
 # Maximum Coins with Robber Neutralization
 
-## 🧩 Problem
+##  Problem
 
 You are given a grid `coins` of size `m x n`.
 
@@ -17,7 +17,7 @@ Return the **maximum coins** you can collect.
 
 ---
 
-## 💡 Approach
+##  Approach
 
 We use **Dynamic Programming (DP)** with an extra dimension.
 
@@ -34,7 +34,7 @@ Represents the **maximum coins collected** at `(i, j)`.
 
 ---
 
-## 🔄 Transition
+##  Transition
 
 From top `(i-1, j)` or left `(i, j-1)`:
 
@@ -53,7 +53,7 @@ dp[i][j][k+1] = previous (no loss)
 
 ---
 
-## ⚙️ Initialization
+##  Initialization
 
 At `(0,0)`:
 
@@ -64,7 +64,7 @@ At `(0,0)`:
 
 ---
 
-## ✅ Result
+##  Result
 
 
 max(dp[m-1][n-1][0], dp[m-1][n-1][1], dp[m-1][n-1][2])
@@ -72,14 +72,14 @@ max(dp[m-1][n-1][0], dp[m-1][n-1][1], dp[m-1][n-1][2])
 
 ---
 
-## ⏱ Complexity
+##  Complexity
 
 - Time: `O(m * n * 3)`
 - Space: `O(m * n * 3)`
 
 ---
 
-## 🚀 Key Insight
+##  Key Insight
 
 This is a **grid DP with limited resource (k = 2)** problem.
 
@@ -90,7 +90,7 @@ Similar patterns:
 
 ---
 
-## 🧪 Example
+##  Example
 
 ### Input
 
