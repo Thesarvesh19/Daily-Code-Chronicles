@@ -1,5 +1,5 @@
 # Maximum Walls Destroyed by Robots
-
+ 
 ## Problem Summary
 
 You are given:
