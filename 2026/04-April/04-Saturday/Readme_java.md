@@ -10,6 +10,6 @@ Given an encoded string formed using a slanted transposition cipher and the numb
 - Build the result string
 - Remove trailing spaces
 
-## Complexity
+## Complexity 
 - Time: O(n)
 - Space: O(n)
