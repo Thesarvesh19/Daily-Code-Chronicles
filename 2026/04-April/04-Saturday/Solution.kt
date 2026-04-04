@@ -1,3 +1,4 @@
+//update
 class Solution {
     fun decodeCiphertext(encodedText: String, rows: Int): String {
         if (rows == 1) return encodedText
