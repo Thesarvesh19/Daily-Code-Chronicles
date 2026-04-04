@@ -1,3 +1,4 @@
+//update
 class Solution {
     public String decodeCiphertext(String encodedText, int rows) {
         if (rows == 1) return encodedText;
