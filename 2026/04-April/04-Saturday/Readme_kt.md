@@ -1,4 +1,4 @@
-# Decode Slanted Ciphertext (Kotlin)
+# Decode Slanted Ciphertext (Kotlin) 
 
 ## Problem
 Decode a string encoded with a slanted transposition cipher using a fixed number of rows.
