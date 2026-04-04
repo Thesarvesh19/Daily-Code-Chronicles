@@ -1,5 +1,5 @@
 # Decode Slanted Ciphertext (C)
-
+ 
 ## Problem
 Decode a string encoded using a slanted transposition cipher.
 
