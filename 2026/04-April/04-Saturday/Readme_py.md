@@ -1,4 +1,4 @@
-# Decode Slanted Ciphertext
+# Decode Slanted Ciphertext 
 
 ## Problem
 Decode a string encoded using a slanted transposition cipher.
