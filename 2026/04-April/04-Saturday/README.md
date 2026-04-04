@@ -1,5 +1,5 @@
 # Decode Slanted Ciphertext
-
+ 
 ## Problem
 You are given a string that was encoded using a slanted matrix and a number of rows. You need to find the original string.
 
