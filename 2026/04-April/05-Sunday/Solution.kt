@@ -4,7 +4,7 @@ class Solution {
         var y = 0
         
         for (move in moves) {
-            when (move) {
+            when (move) { 
                 'U' -> y++
                 'D' -> y--
                 'R' -> x++
