@@ -4,7 +4,7 @@
 
 A robot starts at position (0, 0) on a 2D plane. You are given a string `moves` that represents a sequence of movements. Each character in the string corresponds to a movement:
 
-- U → move up  
+- U → move up   
 - D → move down  
 - L → move left  
 - R → move right  
