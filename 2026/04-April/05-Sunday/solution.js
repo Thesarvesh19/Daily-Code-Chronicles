@@ -3,7 +3,7 @@ var judgeCircle = function(moves) {
     
     for (let move of moves) {
         if (move === 'U') y++;
-        else if (move === 'D') y--;
+        else if (move === 'D') y--; 
         else if (move === 'R') x++;
         else if (move === 'L') x--;
     }
