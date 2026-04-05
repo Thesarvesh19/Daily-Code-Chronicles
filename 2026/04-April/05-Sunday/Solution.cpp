@@ -4,7 +4,7 @@ public:
         int x = 0, y = 0;
         
         for (char move : moves) {
-            if (move == 'U') y++;
+            if (move == 'U') y++; 
             else if (move == 'D') y--;
             else if (move == 'R') x++;
             else if (move == 'L') x--;
