@@ -5,7 +5,7 @@ class Solution {
         for (char move : moves.toCharArray()) {
             if (move == 'U') y++;
             else if (move == 'D') y--;
-            else if (move == 'R') x++;
+            else if (move == 'R') x++; 
             else if (move == 'L') x--;
         }
         
