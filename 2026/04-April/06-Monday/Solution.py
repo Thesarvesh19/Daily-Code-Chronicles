@@ -10,7 +10,7 @@ class Solution:
         obstacle_set = set(map(tuple, obstacles))
         
         for cmd in commands:
-            if cmd == -2:  # turn left
+            if cmd == -2:  # turn left 
                 d = (d + 3) % 4
             elif cmd == -1:  # turn right
                 d = (d + 1) % 4
