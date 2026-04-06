@@ -1,5 +1,5 @@
 # Robot Simulation with Obstacles
-
+ 
 ## Problem
 
 A robot starts at (0, 0) on an infinite 2D plane facing north. It follows a sequence of commands:
