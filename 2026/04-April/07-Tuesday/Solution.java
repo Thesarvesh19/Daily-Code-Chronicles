@@ -3,7 +3,7 @@ class Robot {
     int cycle;
     boolean moved;
 
-    public Robot(int width, int height) {
+    public Robot(int width, int height) { 
         this.w = width;
         this.h = height;
         this.x = 0;
