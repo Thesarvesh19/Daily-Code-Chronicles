@@ -1,5 +1,5 @@
 # Walking Robot Simulation II
-
+ 
 ## Problem Overview
 
 We are given a rectangular grid of size `width x height`. A robot starts at position `(0, 0)` facing **East**.
