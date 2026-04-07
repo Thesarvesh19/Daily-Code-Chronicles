@@ -5,7 +5,7 @@ class Robot:
         self.h = height
         self.x = 0
         self.y = 0
-        self.dir = 0  # 0=East, 1=North, 2=West, 3=South
+        self.dir = 0  # 0=East, 1=North, 2=West, 3=South 
         self.cycle = 2 * (width + height) - 4
         self.moved = False
 
