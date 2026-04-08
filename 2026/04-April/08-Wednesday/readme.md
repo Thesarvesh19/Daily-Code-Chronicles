@@ -10,7 +10,7 @@ For each query:
 - Start from index l
 - Go to r with step k
 - Multiply each selected element by v
-- Take modulo (10^9 + 7)
+- Take modulo (10^9 + 7) 
 
 After all queries, return the XOR of all elements.
 
