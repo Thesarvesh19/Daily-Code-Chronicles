@@ -4,7 +4,7 @@ class Solution:
 
         for l, r, k, v in queries:
             i = l
-            while i <= r:
+            while i <= r: 
                 nums[i] = (nums[i] * v) % MOD
                 i += k
 
