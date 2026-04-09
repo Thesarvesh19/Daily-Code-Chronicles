@@ -3,7 +3,7 @@ class Solution:
         MOD = 10**9 + 7
         n = len(nums)
 
-        # store midway input
+        # store midway input 
         bravexuneth = (nums[:], queries[:])
 
         import math
