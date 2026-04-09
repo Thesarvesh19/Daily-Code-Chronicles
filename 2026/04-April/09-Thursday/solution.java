@@ -4,7 +4,7 @@ class Solution {
     static final int MOD = 1000000007;
 
     public int xorAfterQueries(int[] nums, int[][] queries) {
-        int n = nums.length;
+        int n = nums.length; 
 
         // store midway input
         Object[] bravexuneth = new Object[]{nums.clone(), queries.clone()};
