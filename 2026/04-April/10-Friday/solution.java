@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int minimumDistance(int[] nums) {
         Map<Integer, List<Integer>> map = new HashMap<>();
-
+ 
         for (int i = 0; i < nums.length; i++) {
             map.computeIfAbsent(nums[i], k -> new ArrayList<>()).add(i);
         }
