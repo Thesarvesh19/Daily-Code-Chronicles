@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+ 
 #define MAXN 101
 
 int minimumDistance(int* nums, int numsSize) {
