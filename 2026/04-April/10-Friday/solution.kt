@@ -8,7 +8,7 @@ class Solution {
 
         var ans = Int.MAX_VALUE
 
-        for (list in map.values) {
+        for (list in map.values) { 
             for (i in 0 until list.size - 2) {
                 ans = minOf(ans, 2 * (list[i + 2] - list[i]))
             }
