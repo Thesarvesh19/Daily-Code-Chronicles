@@ -1,7 +1,7 @@
 # Minimum Distance Between Three Equal Elements
 
 ## Problem
-Given an integer array nums, find a tuple (i, j, k) such that:
+Given an integer array nums, find a tuple (i, j, k) such that: 
 - i, j, k are distinct indices
 - nums[i] == nums[j] == nums[k]
 
