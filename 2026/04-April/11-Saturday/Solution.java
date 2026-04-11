@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class Solution { 
     public int minimumDistance(int[] nums) { 
         Map<Integer, List<Integer>> map = new HashMap<>();
         
