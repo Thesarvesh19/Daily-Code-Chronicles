@@ -5,7 +5,7 @@
 
 typedef struct {
     int *arr;
-    int size;
+    int size; 
     int capacity;
 } List;
 
