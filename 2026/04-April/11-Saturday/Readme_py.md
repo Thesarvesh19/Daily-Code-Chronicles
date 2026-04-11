@@ -5,7 +5,7 @@ Find minimum distance of any tuple (i, j, k) such that:
 nums[i] == nums[j] == nums[k]
 
 Distance:
-|i - j| + |j - k| + |k - i|
+|i - j| + |j - k| + |k - i| 
 
 ## Key Idea
 For i < j < k:
