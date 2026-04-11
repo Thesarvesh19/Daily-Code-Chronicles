@@ -5,7 +5,7 @@ Find minimum distance for 3 equal elements.
 
 ## Trick
 Distance becomes:
-2 * (k - i)
+2 * (k - i) 
 
 ## Approach
 - Create array of lists
