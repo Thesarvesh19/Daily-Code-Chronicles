@@ -2,9 +2,9 @@ from collections import defaultdict
 
 class Solution:
     def minimumDistance(self, nums):
-        pos = defaultdict(list)
+        pos = defaultdict(list) 
         
-        for i, val in enumerate(nums):
+        for i, val in enumerate(nums): 
             pos[val].append(i)
         
         ans = float('inf')
