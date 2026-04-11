@@ -1,9 +1,9 @@
 # Minimum Distance of Good Tuple (Java)
-
+ 
 ## Problem
 Find minimum distance of indices (i, j, k) where values are equal.
 
-## Optimization
+## Optimization 
 Distance simplifies to:
 2 * (k - i)
 
