@@ -5,7 +5,7 @@ class Solution:
         def dist(a: int, b: int) -> int:
             if a == 26:
                 return 0
-            x1, y1 = a // 6, a % 6
+            x1, y1 = a // 6, a % 6 
             x2, y2 = b // 6, b % 6
             return abs(x1 - x2) + abs(y1 - y2)
 
