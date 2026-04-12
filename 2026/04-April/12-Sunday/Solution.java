@@ -6,7 +6,7 @@ class Solution {
 
   private int minimumDistance(String word, int i, int j, int k, Integer[][][] mem) {
     if (k == word.length())
-      return 0;
+      return 0; 
     if (mem[i][j][k] != null)
       return mem[i][j][k];
     int c = word.charAt(k) - 'A';
