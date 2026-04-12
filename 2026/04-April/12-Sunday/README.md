@@ -9,7 +9,7 @@ Compute the minimum distance required to type a word using two fingers on a keyb
 - Track positions of both fingers and current index.
 - At each step, choose:
   - Move left finger
-  - Move right finger
+  - Move right finger 
 - Take the minimum cost of both options.
 
 ## State Definition
