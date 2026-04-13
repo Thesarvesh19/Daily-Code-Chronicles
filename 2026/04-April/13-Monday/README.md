@@ -6,7 +6,7 @@ Given an integer array `nums` (0-indexed) and two integers `target` and `start`,
 find an index `i` such that:
 
 - `nums[i] == target`
-- The value of `|i - start|` is minimized
+- The value of `|i - start|` is minimized 
 
 Return the minimum value of `|i - start|`.
 
