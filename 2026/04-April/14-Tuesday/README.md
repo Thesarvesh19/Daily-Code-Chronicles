@@ -4,7 +4,7 @@
 
 There are robots and factories located on the X-axis.
 
-You are given:
+You are given: 
 - An integer array `robot` where `robot[i]` is the position of the ith robot.
 - A 2D array `factory` where `factory[j] = [positionj, limitj]`.
 
