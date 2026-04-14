@@ -1,5 +1,5 @@
 class Solution:
-    def minimumTotalDistance(self, robot, factory):
+    def minimumTotalDistance(self, robot, factory): 
         robot.sort()
         factory.sort()
         
