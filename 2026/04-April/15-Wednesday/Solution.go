@@ -8,7 +8,7 @@ func closestTarget(words []string, target string, startIndex int) int {
         if words[i] == target {
             d := abs(i - startIndex)
             ans = min(ans, min(d, n-d))
-        }
+        } 
     }
 
     if ans == math.MaxInt32 {
