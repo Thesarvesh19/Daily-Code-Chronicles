@@ -7,7 +7,7 @@ var closestTarget = function(words, target, startIndex) {
             let d = Math.abs(i - startIndex);
             ans = Math.min(ans, Math.min(d, n - d));
         }
-    }
+    } 
 
     return ans === Infinity ? -1 : ans;
 };
