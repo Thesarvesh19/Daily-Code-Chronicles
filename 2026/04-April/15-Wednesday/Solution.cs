@@ -4,7 +4,7 @@ public class Solution {
         int ans = int.MaxValue;
 
         for (int i = 0; i < n; i++) {
-            if (words[i] == target) {
+            if (words[i] == target) { 
                 int d = Math.Abs(i - startIndex);
                 ans = Math.Min(ans, Math.Min(d, n - d));
             }
