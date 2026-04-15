@@ -6,7 +6,7 @@ public:
 
         for (int i = 0; i < n; i++) {
             if (words[i] == target) {
-                int d = abs(i - startIndex);
+                int d = abs(i - startIndex); 
                 ans = min(ans, min(d, n - d));
             }
         }
