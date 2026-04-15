@@ -6,7 +6,7 @@ You are given a 0-indexed circular string array `words` and a string `target`.
 
 A circular array means:
 - Next index: (i + 1) % n
-- Previous index: (i - 1 + n) % n
+- Previous index: (i - 1 + n) % n 
 
 Starting from `startIndex`, you can move left or right.
 
