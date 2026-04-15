@@ -6,7 +6,7 @@
 int closestTarget(char** words, int wordsSize, char* target, int startIndex) {
     int ans = INT_MAX;
 
-    for (int i = 0; i < wordsSize; i++) {
+    for (int i = 0; i < wordsSize; i++) { 
         if (strcmp(words[i], target) == 0) {
             int d = abs(i - startIndex);
             int minDist = d < (wordsSize - d) ? d : (wordsSize - d);
