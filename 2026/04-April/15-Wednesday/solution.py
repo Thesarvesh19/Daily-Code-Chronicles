@@ -5,7 +5,7 @@ class Solution:
         
         for i in range(n):
             if words[i] == target:
-                d = abs(i - startIndex)
+                d = abs(i - startIndex) 
                 ans = min(ans, min(d, n - d))
         
         return -1 if ans == float('inf') else ans
