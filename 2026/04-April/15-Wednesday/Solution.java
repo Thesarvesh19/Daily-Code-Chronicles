@@ -5,7 +5,7 @@ class Solution {
         
         for (int i = 0; i < n; i++) {
             if (words[i].equals(target)) {
-                int d = Math.abs(i - startIndex);
+                int d = Math.abs(i - startIndex); 
                 ans = Math.min(ans, Math.min(d, n - d));
             }
         }
