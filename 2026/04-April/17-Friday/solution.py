@@ -7,7 +7,7 @@ class Solution:
             while x:
                 rev = rev * 10 + x % 10
                 x //= 10
-            return rev
+            return rev 
         
         last_seen = {}
         ans = float('inf')
