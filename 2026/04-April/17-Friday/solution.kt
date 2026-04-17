@@ -7,7 +7,7 @@ class Solution {
 
         for (j in nums.indices) {
             val num = nums[j]
-
+ 
             if (map.containsKey(num)) {
                 ans = minOf(ans, j - map[num]!!)
             }
