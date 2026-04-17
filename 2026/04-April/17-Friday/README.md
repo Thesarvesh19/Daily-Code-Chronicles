@@ -5,7 +5,7 @@ You are given an integer array nums.
 
 A mirror pair is a pair of indices (i, j) such that:
 - 0 <= i < j < nums.length
-- reverse(nums[i]) == nums[j]
+- reverse(nums[i]) == nums[j] 
 
 Return the minimum absolute distance between such pairs.
 If no such pair exists, return -1.
