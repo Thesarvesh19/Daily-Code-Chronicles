@@ -5,7 +5,7 @@
 - Compute absolute difference between original and reversed number.
 
 ## Logic
-- Convert to string and reverse OR use math.
+- Convert to string and reverse OR use math. 
 - Return abs(n - reversed_n)
 
 ## Complexity
