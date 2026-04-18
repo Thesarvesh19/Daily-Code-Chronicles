@@ -6,7 +6,7 @@ class Solution {
         while (temp > 0) {
             rev = rev * 10 + temp % 10;
             temp /= 10;
-        }
+        } 
         return Math.abs(n - rev);
     }
 }
