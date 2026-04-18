@@ -1,12 +1,6 @@
-// 3783. Mirror Distance of an Integer
+# 3783. Mirror Distance of an Integer
 
-class Solution {
-    public int mirrorDistance(int n) {
-        int temp = n, rev = 0;
-        while (temp > 0) {
-            rev = rev * 10 + temp % 10;
-            temp /= 10;
-        }
-        return Math.abs(n - rev);
-    }
-}
+class Solution:
+    def mirrorDistance(self, n):
+        rev = int(str(n)[::-1])
+        return abs(n - rev)
