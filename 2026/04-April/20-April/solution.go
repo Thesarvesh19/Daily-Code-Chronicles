@@ -15,6 +15,6 @@ func maxDistance(colors []int) int {
             }
         }
     }
-
+ 
     return ans
 }
