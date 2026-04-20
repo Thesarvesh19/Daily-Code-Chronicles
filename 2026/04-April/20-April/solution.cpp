@@ -10,7 +10,7 @@ public:
                 ans = max(ans, i);
             }
             if (colors[i] != colors[n - 1]) {
-                ans = max(ans, n - 1 - i);
+                ans = max(ans, n - 1 - i); 
             }
         }
 
