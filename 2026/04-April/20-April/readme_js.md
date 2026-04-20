@@ -11,7 +11,7 @@ The widest gap comes from comparing endpoints with other elements.
 - Update result using Math.max
 
 ## Language Feature
-JavaScript's dynamic typing and Math utilities simplify logic.
+JavaScript's dynamic typing and Math utilities simplify logic. 
 
 ## Complexity
 Time Complexity: O(n)  
