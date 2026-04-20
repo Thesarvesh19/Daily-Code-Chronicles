@@ -8,7 +8,7 @@ Use a single pass to determine the maximum valid distance.
 - Compare each value with:
   - First element
   - Last element
-- Update answer using conditional checks
+- Update answer using conditional checks 
 
 ## Go Specific Note
 Go avoids unnecessary abstractions, so logic is explicit.
