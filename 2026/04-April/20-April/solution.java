@@ -8,7 +8,7 @@ class Solution {
             if (colors[i] != colors[0]) {
                 ans = Math.max(ans, i);
             }
-            if (colors[i] != colors[n - 1]) {
+            if (colors[i] != colors[n - 1]) { 
                 ans = Math.max(ans, n - 1 - i);
             }
         }
