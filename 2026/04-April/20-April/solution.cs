@@ -7,7 +7,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             if (colors[i] != colors[0]) {
                 ans = Math.Max(ans, i);
-            }
+            }     
             if (colors[i] != colors[n - 1]) {
                 ans = Math.Max(ans, n - 1 - i);
             }
