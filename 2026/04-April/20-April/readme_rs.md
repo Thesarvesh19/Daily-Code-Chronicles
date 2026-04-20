@@ -9,7 +9,7 @@ Leverage Rust's iterator-style looping with strong type safety.
 - Use max method for updates
 
 ## Rust Feature
-Type casting is required when converting indices to i32.
+Type casting is required when converting indices to i32. 
 
 ## Complexity
 Time Complexity: O(n)  
