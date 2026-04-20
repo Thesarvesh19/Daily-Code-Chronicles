@@ -5,7 +5,7 @@ Checking all pairs is unnecessary. The answer lies at extremes.
 
 ## Algorithm
 - Loop through the array once
-- Use std::max to track:
+- Use std::max to track: 
   - Distance from first element
   - Distance from last element
 
