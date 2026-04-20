@@ -4,7 +4,7 @@ class Solution:
         n = len(colors)
         ans = 0
         
-        for i in range(n):
+        for i in range(n): 
             if colors[i] != colors[0]:
                 ans = max(ans, i)
             if colors[i] != colors[n - 1]:
