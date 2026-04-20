@@ -7,7 +7,7 @@ The solution leverages Kotlin's expressive syntax for concise comparisons.
 - Loop through indices
 - Use maxOf to update answer
 - Compare against boundary elements
-
+ 
 ## Kotlin Advantage
 maxOf simplifies finding maximum without manual checks.
 
