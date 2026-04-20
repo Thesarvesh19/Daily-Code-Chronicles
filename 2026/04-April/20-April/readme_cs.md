@@ -8,7 +8,7 @@ We aim to maximize the difference between indices with unequal values.
 - Compare each element with:
   - First element
   - Last element
-- Use Math.Max to store result
+- Use Math.Max to store result 
 
 ## C# Feature
 Math.Max simplifies comparisons and keeps code clean.
