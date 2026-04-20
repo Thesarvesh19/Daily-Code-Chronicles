@@ -8,7 +8,7 @@ int maxDistance(int* colors, int colorsSize) {
         }
         if (colors[i] != colors[colorsSize - 1]) {
             if (colorsSize - 1 - i > ans) ans = colorsSize - 1 - i;
-        }
+        } 
     }
 
     return ans;
