@@ -9,7 +9,7 @@ Instead of checking all pairs, observe that the farthest distance must involve e
 - Take the maximum of both.
 
 ## Implementation Detail
-Python makes it easy to track the maximum using built-in functions like max().
+Python makes it easy to track the maximum using built-in functions like max(). 
 
 ## Complexity
 Time: O(n)  
