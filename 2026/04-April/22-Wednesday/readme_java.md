@@ -8,7 +8,7 @@ Each query is validated against dictionary words using a helper method.
 - Count mismatches
 - Stop early if threshold exceeded
 
-## Complexity
+## Complexity 
 - Time: O(Q * D * N)
 - Space: O(1)
 
