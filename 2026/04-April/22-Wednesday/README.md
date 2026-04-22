@@ -9,7 +9,7 @@ Return all query words that can be transformed into any dictionary word using at
 
 ## Key Concept
 Count character differences (Hamming Distance)
-
+ 
 If differences <= 2, the word is valid.
 
 ## Implementations
