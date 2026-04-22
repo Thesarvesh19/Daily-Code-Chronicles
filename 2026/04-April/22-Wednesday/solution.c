@@ -9,7 +9,7 @@ int compare(char *a, char *b) {
         if (*a != *b) {
             diff++;
             if (diff > 2) return 0;
-        }
+        } 
         a++;
         b++;
     }
