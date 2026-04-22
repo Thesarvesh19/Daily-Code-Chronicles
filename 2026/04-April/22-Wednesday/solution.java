@@ -12,7 +12,7 @@ class Solution {
             for (String d : dictionary) {
                 if (check(q, d)) {
                     res.add(q);
-                    break;
+                    break; 
                 }
             }
         }
