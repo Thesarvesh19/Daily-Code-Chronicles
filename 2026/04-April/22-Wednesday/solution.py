@@ -7,7 +7,7 @@ class Solution:
         
         for word in queries:
             for target in dictionary:
-                mismatch = 0
+                mismatch = 0 
                 
                 for a, b in zip(word, target):
                     if a != b:
