@@ -10,7 +10,7 @@ We compare each query word with every dictionary word and count character differ
 
 ## Complexity
 - Time: O(Q * D * N)
-- Space: O(1)
+- Space: O(1) 
 
 ## Features
 - Clean implementation
