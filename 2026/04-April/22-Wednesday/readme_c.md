@@ -10,7 +10,7 @@ Use pointer traversal to compare characters efficiently.
 
 ## Complexity
 - Time: O(Q * D * N)
-- Space: O(1)
+- Space: O(1) 
 
 ## Highlights
 - Memory efficient
