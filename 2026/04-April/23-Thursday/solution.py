@@ -6,7 +6,7 @@ class Solution:
     def distance(self, nums):
         index_map = defaultdict(list)
         
-        # Step 1: group indices by value
+        # Step 1: group indices by value 
         for i, num in enumerate(nums):
             index_map[num].append(i)
         
