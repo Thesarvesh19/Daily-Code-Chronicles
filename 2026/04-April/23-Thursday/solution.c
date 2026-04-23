@@ -10,7 +10,7 @@ typedef struct {
     int size;
     int capacity;
 } Vector;
-
+ 
 void push_back(Vector *v, int val) {
     if (v->size == v->capacity) {
         v->capacity = v->capacity == 0 ? 2 : v->capacity * 2;
