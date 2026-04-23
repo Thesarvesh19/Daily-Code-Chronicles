@@ -7,7 +7,7 @@ Given an integer array `nums`, compute an array `arr` such that:
 arr[i] = sum of |i - j| for all j where nums[j] == nums[i] and j != i
 
 If no such index exists, arr[i] = 0.
-
+ 
 ---
 
 ## Approach
