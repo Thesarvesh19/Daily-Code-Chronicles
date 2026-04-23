@@ -1,7 +1,7 @@
 // 2615. Sum of Distances
 
 import java.util.*;
-
+ 
 class Solution {
     public long[] distance(int[] nums) {
         Map<Integer, List<Integer>> map = new HashMap<>();
