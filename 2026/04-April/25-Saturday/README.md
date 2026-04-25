@@ -1,5 +1,5 @@
 # Maximize Minimum Manhattan Distance on Square Boundary
-
+ 
 ## Problem Summary
 
 You are given:
