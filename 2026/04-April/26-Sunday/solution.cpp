@@ -1,4 +1,4 @@
-// 🔷 Problem: Detect Cycles in a 2D Grid (DFS Graph Traversal - C++)
+//  Problem: Detect Cycles in a 2D Grid (DFS Graph Traversal - C++)
 
 #include <vector>
 using namespace std;
