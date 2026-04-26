@@ -1,6 +1,6 @@
-# 🔍 Detect Cycles in a 2D Grid
+#  Detect Cycles in a 2D Grid
 
-## 🧩 Problem Summary
+##  Problem Summary
 Given a 2D grid of characters, determine whether there exists a cycle of the same character.
 
 A valid cycle:
@@ -10,7 +10,7 @@ A valid cycle:
 
 ---
 
-## 💡 Approach: DFS (Depth-First Search)
+##  Approach: DFS (Depth-First Search)
 
 - Traverse each cell
 - Start DFS if not visited
@@ -20,7 +20,7 @@ A valid cycle:
 
 ---
 
-## ⚙️ Complexity
+##  Complexity
 
 | Metric | Value |
 |-------|------|
@@ -29,13 +29,13 @@ A valid cycle:
 
 ---
 
-## 🚀 Key Insight
+##  Key Insight
 
 This problem is equivalent to detecting cycles in an **undirected graph embedded in a grid**, with the additional constraint of matching characters.
 
 ---
 
-## 📌 Implementations Included
+##  Implementations Included
 
 - Python (DFS)
 - Java (DFS with class structure)
@@ -44,19 +44,19 @@ This problem is equivalent to detecting cycles in an **undirected graph embedded
 
 ---
 
-## ✅ When Cycle Exists
+##  When Cycle Exists
 
 - Returning to an already visited node
 - Not coming from its immediate parent
 
 ---
 
-## ❌ When No Cycle
+##  When No Cycle
 
 - All paths terminate without revisiting nodes improperly
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 
 Efficient traversal + careful parent tracking ensures accurate cycle detection in linear time.
