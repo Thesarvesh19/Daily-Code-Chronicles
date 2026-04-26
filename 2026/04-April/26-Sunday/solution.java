@@ -1,4 +1,4 @@
-// 🔷 Problem: Detect Cycles in a 2D Grid (Graph DFS - Java)
+// Problem: Detect Cycles in a 2D Grid (Graph DFS - Java)
 
 class Solution {
     int m, n;
