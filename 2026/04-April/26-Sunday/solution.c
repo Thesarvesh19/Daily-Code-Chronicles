@@ -1,4 +1,4 @@
-// 🔷 Problem: Detect Cycles in a 2D Grid (Recursive DFS - C)
+//  Problem: Detect Cycles in a 2D Grid (Recursive DFS - C)
 
 #include <stdbool.h>
 
