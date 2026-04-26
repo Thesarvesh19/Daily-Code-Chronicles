@@ -2,7 +2,7 @@
 
 class Solution:
     def containsCycle(self, grid):
-        m, n = len(grid), len(grid[0])
+        m, n = len(grid), len(grid[0]) 
         visited = [[False] * n for _ in range(m)]
 
         def dfs(x, y, px, py):
