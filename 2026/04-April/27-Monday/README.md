@@ -5,7 +5,7 @@ You are given an m x n grid where each cell represents a street type (1 to 6).
 Each type defines allowed movement directions.
 
 Determine if there exists a valid path from the top-left cell (0,0) to the bottom-right cell (m-1,n-1) such that movement follows valid street connections.
-
+ 
 ## Approach
 - Use BFS to traverse the grid.
 - Each street allows movement in specific directions.
