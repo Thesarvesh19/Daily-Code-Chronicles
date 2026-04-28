@@ -6,7 +6,7 @@ class Solution {
 public:
     int minOperations(vector<vector<int>>& grid, int x) {
         vector<int> nums;
-
+ 
         for (auto& row : grid) {
             for (int num : row) {
                 nums.push_back(num);
