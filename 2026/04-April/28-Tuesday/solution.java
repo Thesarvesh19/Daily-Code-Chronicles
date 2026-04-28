@@ -6,7 +6,7 @@ class Solution {
 
         for (int[] row : grid) {
             for (int num : row) {
-                nums.add(num);
+                nums.add(num); 
             }
         }
 
