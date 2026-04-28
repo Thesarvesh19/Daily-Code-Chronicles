@@ -9,7 +9,7 @@ Return the minimum number of operations to make all elements equal. If not possi
 
 ## Approach
 
-1. Flatten the grid into a 1D array.
+1. Flatten the grid into a 1D array. 
 2. Check feasibility:
    - All elements must have the same remainder when divided by x.
    - Otherwise, return -1.
