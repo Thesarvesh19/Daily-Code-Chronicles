@@ -6,7 +6,7 @@ class Solution {
             for (num in row) {
                 nums.add(num)
             }
-        }
+        } 
 
         nums.sort()
 
