@@ -2,7 +2,7 @@ import "sort"
 
 func minOperations(grid [][]int, x int) int {
     nums := []int{}
-
+ 
     for _, row := range grid {
         nums = append(nums, row...)
     }
