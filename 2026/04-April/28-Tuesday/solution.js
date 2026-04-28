@@ -5,7 +5,7 @@ var minOperations = function(grid, x) {
         nums.push(...row);
     }
 
-    nums.sort((a, b) => a - b);
+    nums.sort((a, b) => a - b); 
 
     let base = nums[0] % x;
     for (let num of nums) {
