@@ -6,7 +6,7 @@ int cmp(const void* a, const void* b) {
 
 int minOperations(int** grid, int gridSize, int* gridColSize, int x) {
     int n = gridSize * gridColSize[0];
-    int* nums = (int*)malloc(n * sizeof(int));
+    int* nums = (int*)malloc(n * sizeof(int)); 
 
     int idx = 0;
     for (int i = 0; i < gridSize; i++) {
