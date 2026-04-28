@@ -6,7 +6,7 @@ class Solution:
         base = nums[0] % x
         for num in nums:
             if num % x != base:
-                return -1
+                return -1 
 
         median = nums[len(nums) // 2]
         return sum(abs(num - median) // x for num in nums)
