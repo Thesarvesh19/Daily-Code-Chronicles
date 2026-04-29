@@ -10,7 +10,7 @@ You are given an `n x n` grid. You can choose a number of cells from each column
 Your goal is to **maximize the total score**.
 
 ---
-
+ 
 ## Approach
 
 We use **Dynamic Programming + Prefix Sum**.
