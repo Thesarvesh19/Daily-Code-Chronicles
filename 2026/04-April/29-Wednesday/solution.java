@@ -7,7 +7,7 @@ class Solution {
     long[][] prefix = new long[n][n + 1];
     long[] prevPick = new long[n + 1];
     long[] prevSkip = new long[n + 1];
-
+ 
     for (int j = 0; j < n; ++j)
       for (int i = 0; i < n; ++i)
         prefix[j][i + 1] = prefix[j][i] + grid[i][j];
