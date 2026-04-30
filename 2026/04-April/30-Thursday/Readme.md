@@ -1,6 +1,6 @@
 # Maximum Path Score in a Grid
 
-## Problem
+## Problem 
 Given a grid of integers and an integer k:
 
 - Start at top-left (0,0)
