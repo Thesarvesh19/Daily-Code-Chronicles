@@ -3,7 +3,7 @@
 using namespace std;
 
 class Solution {
-public:
+public: 
     int maxPathScore(vector<vector<int>>& grid, int k) {
         int m = grid.size(), n = grid[0].size();
         k = min(k, m + n);
