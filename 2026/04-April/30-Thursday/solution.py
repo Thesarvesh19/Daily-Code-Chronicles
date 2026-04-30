@@ -4,7 +4,7 @@ class Solution:
         k = min(k, m + n)
 
         dp = [[-1] * (k + 1) for _ in range(n)]
-        next_dp = [[-1] * (k + 1) for _ in range(n)]
+        next_dp = [[-1] * (k + 1) for _ in range(n)] 
 
         dp[0][0] = 0
 
