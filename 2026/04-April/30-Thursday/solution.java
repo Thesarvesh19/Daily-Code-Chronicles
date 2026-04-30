@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public int maxPathScore(int[][] grid, int k) {
-        int m = grid.length, n = grid[0].length;
+        int m = grid.length, n = grid[0].length; 
         k = Math.min(k, m + n);
 
         int[][] dp = new int[n][k + 1];
