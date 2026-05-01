@@ -9,7 +9,7 @@ public:
             f += (long)i * nums[i];
         }
 
-        long res = f;
+        long res = f; 
 
         for (int k = 1; k < n; k++) {
             f = f + sum - (long)n * nums[n - k];
