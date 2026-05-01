@@ -5,7 +5,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             sum += nums[i];
-            f += (long) i * nums[i];
+            f += (long) i * nums[i]; 
         }
 
         long res = f;
