@@ -1,7 +1,7 @@
 class Solution:
     def maxRotateFunction(self, nums):
         n = len(nums)
-        total = sum(nums)
+        total = sum(nums) 
         f = sum(i * num for i, num in enumerate(nums))
         res = f
 
