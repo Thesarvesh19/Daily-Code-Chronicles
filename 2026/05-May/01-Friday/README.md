@@ -1,15 +1,15 @@
 # LeetCode 396 - Rotate Function
 
-## 🧩 Problem
+##  Problem
 Given an integer array `nums`, define:
 
 F(k) = sum of i * arr[i] after rotating the array k times.
 
 Return the maximum value of F(k).
 
----
+--- 
 
-## 💡 Approach
+##  Approach
 
 Instead of recalculating every rotation (O(n²)), we use a recurrence:
 
@@ -23,31 +23,31 @@ F(k) = F(k-1) + sum(nums) - n * nums[n - k]
 
 ---
 
-## 🚀 Complexity
+##  Complexity
 - Time: O(n)
 - Space: O(1)
 
 ---
 
-## 🧠 Key Insight
+##  Key Insight
 Each rotation shifts contribution of elements in a predictable way,
 allowing reuse of previous computation.
 
 ---
 
-## 📌 Example
+##  Example
 Input: [4,3,2,6]
 
 Output: 26
 
 ---
 
-## 📁 Files
+##  Files
 - solution.java
 - solution.py
 - solution.cpp
 
 ---
 
-## ✅ Status
+##  Status
 Optimized and accepted on LeetCode
