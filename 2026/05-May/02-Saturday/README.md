@@ -8,7 +8,7 @@ A number is called good if after rotating each digit individually by 180 degrees
 - 1 → 1  
 - 2 ↔ 5  
 - 6 ↔ 9  
-- 8 → 8  
+- 8 → 8   
 
 ### Invalid Digits
 - 3, 4, 7 → make the number invalid
