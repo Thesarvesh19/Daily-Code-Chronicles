@@ -4,7 +4,7 @@ class Solution:
             changed = False
             
             while num > 0:
-                digit = num % 10
+                digit = num % 10 
                 
                 if digit in [3, 4, 7]:
                     return False
