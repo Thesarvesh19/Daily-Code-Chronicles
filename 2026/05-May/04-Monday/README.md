@@ -7,7 +7,7 @@ You must rotate the image **in-place**, meaning you cannot use another matrix.
 
 ---
 
-## 💡 Approach
+## 💡 Approach 
 
 The rotation can be done in two steps:
 
