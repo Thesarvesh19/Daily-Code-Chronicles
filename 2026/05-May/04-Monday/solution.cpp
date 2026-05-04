@@ -8,7 +8,7 @@ public:
             for (int j = i; j < n; j++) {
                 swap(matrix[i][j], matrix[j][i]);
             }
-        }
+        } 
         
         // Step 2: Reverse each row
         for (int i = 0; i < n; i++) {
