@@ -3,7 +3,7 @@
 ## Problem
 Rotate a linked list to the right by k places.
 
-## Approach
+## Approach 
 1. Compute the length of the list.
 2. Connect tail to head to form a circular list.
 3. Find the new tail at (length - k % length - 1).
