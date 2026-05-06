@@ -3,7 +3,7 @@ public:
     vector<vector<char>> rotateTheBox(vector<vector<char>>& boxGrid) {
 
         int m = boxGrid.size();
-        int n = boxGrid[0].size();
+        int n = boxGrid[0].size(); 
 
         for (int i = 0; i < m; i++) {
  
