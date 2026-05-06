@@ -2,7 +2,7 @@
 
 ## Approach
 - Simulate gravity using reverse iteration.
-- Rotate matrix after movement.
+- Rotate matrix after movement. 
 
 ## Time Complexity
 O(m × n)
