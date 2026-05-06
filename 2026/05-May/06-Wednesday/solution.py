@@ -4,7 +4,7 @@ class Solution:
 
         m = len(boxGrid)
         n = len(boxGrid[0])
-
+ 
         for row in boxGrid:
 
             empty_pos = n - 1
