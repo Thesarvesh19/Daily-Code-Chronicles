@@ -1,7 +1,7 @@
 # Python Solution - Rotating the Box
 
 ## Approach
-- Traverse rows from right to left.
+- Traverse rows from right to left. 
 - Move stones to valid empty positions.
 - Rotate matrix using nested loops.
 
