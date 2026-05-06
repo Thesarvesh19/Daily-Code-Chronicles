@@ -1,7 +1,7 @@
 # C# Solution - Rotating the Box
 
 ## Approach
-- Use reverse traversal to simulate gravity.
+- Use reverse traversal to simulate gravity. 
 - Rotate matrix clockwise.
 
 ## Time Complexity
