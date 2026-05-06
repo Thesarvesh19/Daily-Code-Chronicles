@@ -6,7 +6,7 @@ public:
         int n = boxGrid[0].size();
 
         for (int i = 0; i < m; i++) {
-
+ 
             int emptyPos = n - 1;
 
             for (int j = n - 1; j >= 0; j--) {
