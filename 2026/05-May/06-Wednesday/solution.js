@@ -4,7 +4,7 @@ var rotateTheBox = function(boxGrid) {
     let n = boxGrid[0].length;
 
     for (let i = 0; i < m; i++) {
-
+ 
         let emptyPos = n - 1; 
 
         for (let j = n - 1; j >= 0; j--) {
