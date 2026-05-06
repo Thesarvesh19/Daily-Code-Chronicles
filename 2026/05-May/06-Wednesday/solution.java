@@ -2,7 +2,7 @@ class Solution {
 
     public char[][] rotateTheBox(char[][] boxGrid) {
 
-        int m = boxGrid.length;
+        int m = boxGrid.length; 
         int n = boxGrid[0].length;
 
         for (int i = 0; i < m; i++) {
