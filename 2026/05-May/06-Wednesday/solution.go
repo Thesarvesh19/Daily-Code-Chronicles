@@ -1,7 +1,7 @@
 func rotateTheBox(boxGrid [][]byte) [][]byte {
 
     m := len(boxGrid)
-    n := len(boxGrid[0])
+    n := len(boxGrid[0]) 
 
     for i := 0; i < m; i++ {
 
