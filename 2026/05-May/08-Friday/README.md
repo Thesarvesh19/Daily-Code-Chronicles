@@ -13,7 +13,7 @@ Return the minimum number of jumps required to reach the last index.
 ---
 
 ## Approach
-
+ 
 We use:
 
 - **BFS (Breadth First Search)** for shortest path
