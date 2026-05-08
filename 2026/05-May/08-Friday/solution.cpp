@@ -10,7 +10,7 @@ public:
         for (long long i = 2; i * i <= limit; i++) {
             if (spf[i] == i) {
                 for (long long j = i * i; j <= limit; j += i) {
-                    if (spf[j] == j) {
+                    if (spf[j] == j) { 
                         spf[j] = i;
                     }
                 }
