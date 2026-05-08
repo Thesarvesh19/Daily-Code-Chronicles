@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def smallestPrimeFactor(self, limit):
         spf = list(range(limit + 1))
-
+ 
         for i in range(2, int(limit ** 0.5) + 1):
             if spf[i] == i:
                 for j in range(i * i, limit + 1, i):
