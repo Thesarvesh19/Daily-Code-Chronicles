@@ -11,7 +11,7 @@ class Solution {
 
         for (long i = 2; i * i <= limit; i++) {
             if (spf[(int)i] == i) {
-                for (long j = i * i; j <= limit; j += i) {
+                for (long j = i * i; j <= limit; j += i) { 
                     if (spf[(int)j] == j) {
                         spf[(int)j] = (int)i;
                     }
