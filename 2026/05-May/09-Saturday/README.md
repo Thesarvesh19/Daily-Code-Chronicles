@@ -2,7 +2,7 @@
 
 ## Problem Statement
 Given an `m x n` matrix `grid`, rotate each layer of the grid counter-clockwise by `k` positions and return the rotated grid.
-
+ 
 A layer is formed by the outer boundary of the matrix and progressively inner boundaries.
 
 ---
