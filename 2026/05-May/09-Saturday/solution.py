@@ -1,6 +1,6 @@
 class Solution:
     def rotateGrid(self, grid, k):
-        m, n = len(grid), len(grid[0])
+        m, n = len(grid), len(grid[0])  
         layers = min(m, n) // 2
 
         for layer in range(layers):
