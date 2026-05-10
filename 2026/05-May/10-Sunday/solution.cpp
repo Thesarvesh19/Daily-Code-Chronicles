@@ -10,7 +10,7 @@ public:
             if (dp[i] == -1)
                 continue;
 
-            for (int j = i + 1; j < n; j++) {
+            for (int j = i + 1; j < n; j++) { 
                 if (abs(nums[j] - nums[i]) <= target) {
                     dp[j] = max(dp[j], dp[i] + 1);
                 }
