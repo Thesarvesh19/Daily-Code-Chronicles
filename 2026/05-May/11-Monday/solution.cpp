@@ -6,7 +6,7 @@ public:
         for (int num : nums) {
             string s = to_string(num);
 
-            for (char c : s) {
+            for (char c : s) { 
                 result.push_back(c - '0');
             }
         }
