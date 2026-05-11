@@ -6,7 +6,7 @@ public class Solution {
             string s = num.ToString();
 
             foreach (char c in s) {
-                result.Add(c - '0');
+                result.Add(c - '0'); 
             }
         }
 
