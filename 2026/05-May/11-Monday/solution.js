@@ -8,6 +8,6 @@ var separateDigits = function(nums) {
             result.push(parseInt(ch));
         }
     }
-
+ 
     return result;
 };
