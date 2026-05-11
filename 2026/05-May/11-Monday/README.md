@@ -8,7 +8,7 @@ Given an array of positive integers `nums`, return an array `answer` that consis
 ## Example 1
 
 ### Input
-```text
+```text 
 nums = [13,25,83,77]
 ```
 
