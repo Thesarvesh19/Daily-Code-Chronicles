@@ -8,7 +8,7 @@ class Solution {
         
         int totalEnergyNeeded = 0;
         int currentEnergy = 0;
-        
+         
         // Step 2: Traverse through the sorted tasks
         for (int[] task : tasks) {
             int actual = task[0];
