@@ -5,7 +5,7 @@ class Solution:
         tasks.sort(key=lambda x: (x[1] - x[0]), reverse=True)
 
         total_energy_needed = 0
-        current_energy = 0
+        current_energy = 0 
 
         for actual, minimum in tasks:
             if current_energy < minimum:
