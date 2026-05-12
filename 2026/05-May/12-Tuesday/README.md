@@ -5,7 +5,7 @@
 ## Problem
 You are given an array `tasks` where each task is represented as:
 
-- `tasks[i][0]` = actual energy required to complete the task
+- `tasks[i][0]` = actual energy required to complete the task 
 - `tasks[i][1]` = minimum energy required to start the task
 
 Return the minimum initial energy required to finish all tasks.
