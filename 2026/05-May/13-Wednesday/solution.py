@@ -2,7 +2,7 @@ class Solution:
     def minMoves(self, nums: List[int], limit: int) -> int:
         n = len(nums)
         diff = [0] * (2 * limit + 2)
-
+ 
         for i in range(n // 2):
             a = nums[i]
             b = nums[n - 1 - i]
