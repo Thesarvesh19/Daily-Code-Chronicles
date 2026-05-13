@@ -8,7 +8,7 @@ class Solution {
             int b = nums[n - 1 - i];
 
             int low = Math.min(a, b);
-            int high = Math.max(a, b);
+            int high = Math.max(a, b); 
             int sum = a + b;
 
             diff[2] += 2;
