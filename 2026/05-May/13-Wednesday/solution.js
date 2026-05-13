@@ -6,7 +6,7 @@ var minMoves = function(nums, limit) {
         let a = nums[i];
         let b = nums[n - 1 - i];
 
-        let low = Math.min(a, b);
+        let low = Math.min(a, b); 
         let high = Math.max(a, b);
         let sum = a + b;
 
