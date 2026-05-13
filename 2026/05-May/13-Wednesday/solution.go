@@ -12,7 +12,7 @@ func minMoves(nums []int, limit int) int {
 
         diff[2] += 2
         diff[low+1] -= 1
-        diff[sum] -= 1
+        diff[sum] -= 1 
         diff[sum+1] += 1
         diff[high+limit+1] += 1
     }
