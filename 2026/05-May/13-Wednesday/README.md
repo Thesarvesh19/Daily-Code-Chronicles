@@ -6,7 +6,7 @@ Given an integer array `nums` and an integer `limit`, return the minimum number 
 A move consists of replacing any element of the array with any integer between `1` and `limit`.
 
 ---
-
+ 
 ## Approach
 We process pairs:
 - `nums[i]`
