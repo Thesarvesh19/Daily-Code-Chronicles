@@ -5,7 +5,7 @@ class Solution {
         Arrays.sort(nums);
 
         int n = nums.length;
-
+ 
         // Last two elements should be n-1
         if (nums[n - 1] != n - 1 || nums[n - 2] != n - 1)
             return false;
