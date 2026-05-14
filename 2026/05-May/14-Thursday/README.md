@@ -3,7 +3,7 @@
 ## Problem Statement
 Given an integer array `nums`, return `true` if the array is good, otherwise return `false`.
 
-A good array satisfies:
+A good array satisfies: 
 - It contains numbers from `1` to `n-1`
 - Every number appears exactly once
 - The number `n-1` appears exactly twice
