@@ -1,6 +1,6 @@
 # Day 21 – Wednesday
 
-## 🧠 Problem Solved
+## Problem Solved
 3315. Construct the Minimum Bitwise Array II
 
 ## Difficulty
