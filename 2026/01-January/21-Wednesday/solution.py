@@ -1,3 +1,4 @@
+#updated
 class Solution:
     def minBitwiseArray(self, nums):
         ans = []
