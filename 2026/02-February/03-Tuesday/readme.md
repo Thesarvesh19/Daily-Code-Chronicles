@@ -1,4 +1,5 @@
 # Trionic Array Checker
+#updated version:
 
 This repository contains implementations to check whether an array is **trionic**.
 
