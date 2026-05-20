@@ -8,7 +8,7 @@ You must divide the array into **3 disjoint contiguous subarrays** and return th
 
 ---
 
-## Approach
+##  Updated Approach
 - The first subarray always starts at index `0`, so its cost is `nums[0]`.
 - Choose two split points for the start of the second and third subarrays.
 - For every valid split, compute:
