@@ -6,7 +6,7 @@ class Solution:
         for ch in word:
             if ch.islower():
                 lower.add(ch)
-            else:
+            else: 
                 upper.add(ch.lower())
 
         return len(lower & upper)
