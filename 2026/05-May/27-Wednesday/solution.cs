@@ -3,7 +3,7 @@ public class Solution {
 
         HashSet<char> lower = new();
         HashSet<char> upper = new();
-
+ 
         foreach(char ch in word){
             if(char.IsLower(ch))
                 lower.Add(ch);
