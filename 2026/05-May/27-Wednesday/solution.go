@@ -4,7 +4,7 @@ func numberOfSpecialChars(word string) int {
 
     for _, ch := range word {
         if unicode.IsLower(ch) {
-            lower[ch] = true
+            lower[ch] = true 
         } else {
             upper[unicode.ToLower(ch)] = true
         }
