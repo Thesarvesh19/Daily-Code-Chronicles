@@ -5,7 +5,7 @@ var numberOfSpecialChars = function(word) {
     for(let ch of word){
         if(ch >= 'a' && ch <= 'z')
             lower.add(ch);
-        else
+        else 
             upper.add(ch.toLowerCase());
     }
 
