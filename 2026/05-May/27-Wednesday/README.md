@@ -7,7 +7,7 @@ A character is special if:
 
 - Its lowercase form exists
 - Its uppercase form also exists
-
+ 
 Example:
 
 Input:
