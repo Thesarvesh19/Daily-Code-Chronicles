@@ -5,7 +5,7 @@ public:
 
         for(char ch : word){
             if(islower(ch))
-                lower.insert(ch);
+                lower.insert(ch); 
             else
                 upper.insert(tolower(ch));
         }
