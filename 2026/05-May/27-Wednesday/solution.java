@@ -5,7 +5,7 @@ class Solution {
         Set<Character> lower = new HashSet<>();
         Set<Character> upper = new HashSet<>();
 
-        for(char ch : word.toCharArray()) {
+        for(char ch : word.toCharArray()) { 
             if(Character.isLowerCase(ch))
                 lower.add(ch);
             else
