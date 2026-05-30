@@ -1,7 +1,7 @@
 from bisect import bisect_right
 from sortedcontainers import SortedList
 
-class FenwickTree:
+class FenwickTree: 
     def __init__(self, n):
         self.bit = [0] * (n + 1)
 
