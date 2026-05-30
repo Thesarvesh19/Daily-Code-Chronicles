@@ -4,7 +4,7 @@ class SegmentTree {
     int n;
     int[] tree;
 
-    SegmentTree(int n) {
+    SegmentTree(int n) { 
         this.n = n;
         tree = new int[4 * n];
     }
