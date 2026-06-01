@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-A shop is selling candies where you can buy any two candies and get a third candy for free. The free candy must have a cost less than or equal to the cheaper of the two candies purchased.
+A shop is selling candies where you can buy any two candies and get a third candy for free. The free candy must have a cost less than or equal to the cheaper of the two candies purchased. 
 
 Given an integer array `cost`, where `cost[i]` represents the cost of the `i-th` candy, return the minimum amount of money required to buy all the candies.
 
