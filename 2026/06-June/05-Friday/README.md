@@ -5,7 +5,7 @@
 Given two integers `num1` and `num2`, return the total waviness of all numbers in the inclusive range `[num1, num2]`.
 
 A digit is:
-
+ 
 - Peak if it is strictly greater than both neighbors.
 - Valley if it is strictly smaller than both neighbors.
 - First and last digits are never considered.
