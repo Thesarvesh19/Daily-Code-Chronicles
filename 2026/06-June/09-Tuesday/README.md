@@ -1,8 +1,8 @@
-# LeetCode 3689 - Maximum Total Subarray Value I
+# 3689. Maximum Total Subarray Value I
 
 ## Problem Statement
 
-Given an integer array `nums` and an integer `k`, find the maximum total value obtainable by selecting exactly `k` subarrays.
+Given an integer array `nums` and an integer `k`, determine the maximum total value obtainable by selecting exactly `k` subarrays.
 
 The value of a subarray is defined as:
 
@@ -10,93 +10,100 @@ The value of a subarray is defined as:
 max(subarray) - min(subarray)
 ```
 
-Since the same subarray can be chosen multiple times and overlapping is allowed, determine the maximum possible total value.
+The same subarray can be selected multiple times, and overlapping subarrays are allowed.
 
 ---
 
-## Key Observation
+## Intuition
 
-The maximum value of any subarray is achieved when the subarray contains both:
+To maximize the total value, we first need to maximize the value of a single subarray.
 
-* The maximum element of the array
-* The minimum element of the array
+A subarray's value depends only on the difference between its maximum and minimum elements. Therefore, the largest possible value is achieved when the subarray contains both:
 
-Therefore:
+* The maximum element in the array
+* The minimum element in the array
 
-```text
-Maximum Subarray Value = max(nums) - min(nums)
-```
-
-Since the same subarray may be selected repeatedly:
+Thus, the maximum subarray value is:
 
 ```text
-Answer = (max(nums) - min(nums)) × k
+max(nums) - min(nums)
 ```
+
+Since the same subarray can be chosen multiple times, we simply select this optimal subarray `k` times.
 
 ---
 
 ## Algorithm
 
-1. Find the minimum element in the array.
-2. Find the maximum element in the array.
+1. Find the minimum element in `nums`.
+2. Find the maximum element in `nums`.
 3. Compute their difference.
 4. Multiply the difference by `k`.
 5. Return the result.
 
 ---
 
+## Correctness Proof
+
+Let:
+
+```text
+M = max(nums)
+m = min(nums)
+```
+
+For any subarray:
+
+```text
+max(subarray) ≤ M
+min(subarray) ≥ m
+```
+
+Therefore:
+
+```text
+max(subarray) - min(subarray) ≤ M - m
+```
+
+This shows that no subarray can have a value greater than:
+
+```text
+M - m
+```
+
+Since the same subarray may be selected repeatedly, choosing the subarray with value:
+
+```text
+M - m
+```
+
+exactly `k` times produces the maximum possible total value:
+
+```text
+(M - m) × k
+```
+
+Hence, the algorithm is optimal.
+
+---
+
 ## Complexity Analysis
 
-| Complexity | Value |
-| ---------- | ----- |
-| Time       | O(n)  |
-| Space      | O(1)  |
+### Time Complexity
 
----
-
-## C++ Solution
-
-```cpp
-class Solution {
-public:
-    long long maxTotalValue(vector<int>& nums, int k) {
-        long long mn = *min_element(nums.begin(), nums.end());
-        long long mx = *max_element(nums.begin(), nums.end());
-
-        return (mx - mn) * 1LL * k;
-    }
-};
+```text
+O(n)
 ```
 
----
+We scan the array once to find the minimum and maximum values.
 
-## Java Solution
+### Space Complexity
 
-```java
-class Solution {
-    public long maxTotalValue(int[] nums, int k) {
-        long mn = nums[0];
-        long mx = nums[0];
-
-        for (int num : nums) {
-            mn = Math.min(mn, num);
-            mx = Math.max(mx, num);
-        }
-
-        return (mx - mn) * k;
-    }
-}
+```text
+O(1)
 ```
 
----
-
-## Python Solution
-
-```python
-class Solution:
-    def maxTotalValue(self, nums: List[int], k: int) -> int:
-        return (max(nums) - min(nums)) * k
-```
+Only a few variables are used.
 
 ---
 
@@ -116,7 +123,7 @@ max(nums) = 8
 min(nums) = 1
 
 Maximum Subarray Value = 8 - 1 = 7
-Total Value = 7 × 3 = 21
+Answer = 7 × 3 = 21
 ```
 
 ### Output
@@ -124,6 +131,12 @@ Total Value = 7 × 3 = 21
 ```text
 21
 ```
+
+---
+
+## Key Observation
+
+Because repeated selection of the same subarray is allowed, the problem reduces to finding the maximum possible subarray value once and multiplying it by `k`.
 
 ---
 
