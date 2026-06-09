@@ -1,7 +1,7 @@
 # 3689. Maximum Total Subarray Value I
 
 ## Problem Statement
-
+ 
 Given an integer array `nums` and an integer `k`, determine the maximum total value obtainable by selecting exactly `k` subarrays.
 
 The value of a subarray is defined as:
