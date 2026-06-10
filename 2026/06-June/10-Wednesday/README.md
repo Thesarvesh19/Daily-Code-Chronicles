@@ -173,6 +173,182 @@ min(
     minST[i + (1 << (j-1))][j-1]
 );
 ```
+## Range Query Function
+
+The helper function:
+
+```cpp
+getRangeValue(l, r)
+```
+
+returns:
+
+```cpp
+max(nums[l...r]) - min(nums[l...r])
+```
+
+### Step 1: Compute Length
+
+```cpp
+int len = r - l + 1;
+```
+
+### Step 2: Find Largest Power of Two
+
+```cpp
+int j = logTable[len];
+```
+
+### Step 3: Query Maximum
+
+```cpp
+int mx =
+max(
+    maxST[l][j],
+    maxST[r - (1 << j) + 1][j]
+);
+```
+
+### Step 4: Query Minimum
+
+```cpp
+int mn =
+min(
+    minST[l][j],
+    minST[r - (1 << j) + 1][j]
+);
+```
+
+### Step 5: Return Value
+
+```cpp
+return (long long)mx - mn;
+```
+
+Since Sparse Table queries are constant time:
+
+```text
+Time Complexity = O(1)
+```
+
+---
+
+## Heap Initialization
+
+For every starting index:
+
+```cpp
+l = 0 ... n-1
+```
+
+the interval:
+
+```cpp
+[l, n-1]
+```
+
+is inserted into the heap.
+
+```cpp
+for (int l = 0; l < n; l++) {
+    pq.push({
+        getRangeValue(l, n - 1),
+        l,
+        n - 1
+    });
+}
+```
+
+This gives one candidate interval for every left boundary.
+
+---
+
+## Processing the Largest K Values
+
+We repeat exactly k times.
+
+### Extract Best Candidate
+
+```cpp
+auto [val, l, r] = pq.top();
+pq.pop();
+```
+
+Because it is a max heap:
+
+```cpp
+val
+```
+
+is the largest available subarray value.
+
+---
+
+### Add Contribution
+
+```cpp
+totalSum += val;
+```
+
+This contributes to the final answer.
+
+---
+
+### Generate Next Candidate
+
+If:
+
+```cpp
+r > l
+```
+
+then a shorter interval:
+
+```cpp
+[l, r-1]
+```
+
+is created.
+
+```cpp
+pq.push({
+    getRangeValue(l, r - 1),
+    l,
+    r - 1
+});
+```
+
+This allows the algorithm to continue exploring intervals starting at the same left boundary.
+
+---
+
+## Why Does This Work?
+
+For every left boundary:
+
+```cpp
+l
+```
+
+we create the sequence:
+
+```text
+[l,n−1]
+[l,n−2]
+[l,n−3]
+...
+[l,l]
+```
+
+The heap always stores the largest unexplored candidate from every sequence.
+
+Whenever the best interval is selected, the next interval from the same sequence is inserted.
+
+Thus:
+
+- No candidate is missed.
+- Intervals are explored in decreasing order of priority.
+- The largest available value is always chosen.
 
 Preprocessing Complexity:
 
