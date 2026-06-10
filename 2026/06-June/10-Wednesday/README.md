@@ -355,3 +355,201 @@ Preprocessing Complexity:
 ```text
 O(n log n)
 ```
+## Example Walkthrough
+
+Input:
+
+```cpp
+nums = [1,3,2]
+k = 3
+```
+
+Subarrays:
+
+| Subarray | Value |
+|-----------|--------|
+| [1] | 0 |
+| [3] | 0 |
+| [2] | 0 |
+| [1,3] | 2 |
+| [3,2] | 1 |
+| [1,3,2] | 2 |
+
+Sorted Values:
+
+```text
+2, 2, 1, 0, 0, 0
+```
+
+Top 3 Values:
+
+```text
+2 + 2 + 1 = 5
+```
+
+Answer:
+
+```cpp
+5
+```
+
+---
+
+## Correctness Proof
+
+### Lemma 1
+
+Sparse Tables correctly return:
+
+```cpp
+max(nums[l...r])
+```
+
+and
+
+```cpp
+min(nums[l...r])
+```
+
+in O(1).
+
+This follows directly from the Sparse Table construction.
+
+---
+
+### Lemma 2
+
+Each interval:
+
+```cpp
+[l,r]
+```
+
+eventually appears in the heap exploration sequence.
+
+For every fixed left boundary:
+
+```text
+[l,n−1]
+[l,n−2]
+...
+[l,l]
+```
+
+all possible right boundaries are generated.
+
+Therefore no interval is omitted.
+
+---
+
+### Lemma 3
+
+The heap always returns the largest currently available interval value.
+
+This is guaranteed by the max-heap property.
+
+---
+
+### Theorem
+
+The algorithm returns the sum of the k largest subarray values.
+
+Proof:
+
+1. Every valid interval is eventually generated.
+2. The heap always extracts the largest available candidate.
+3. Exactly k extractions are performed.
+4. Their values are accumulated into the answer.
+
+Therefore the resulting sum equals the sum of the k largest subarray values.
+
+---
+
+## Complexity Analysis
+
+### Sparse Table Construction
+
+```text
+O(n log n)
+```
+
+---
+
+### Heap Initialization
+
+```text
+O(n)
+```
+
+---
+
+### Heap Operations
+
+For k iterations:
+
+- One pop
+- At most one push
+
+Each operation costs:
+
+```text
+O(log n)
+```
+
+Total:
+
+```text
+O(k log n)
+```
+
+---
+
+## Overall Complexity
+
+### Time Complexity
+
+```text
+O(n log n + k log n)
+```
+
+### Space Complexity
+
+```text
+O(n log n)
+```
+
+for:
+
+- Maximum Sparse Table
+- Minimum Sparse Table
+- Log Table
+- Priority Queue
+
+---
+
+## Key Takeaways
+
+- Sparse Tables provide O(1) range maximum and minimum queries.
+- Priority Queue efficiently tracks the next largest candidate interval.
+- Avoids generating all O(n²) subarrays explicitly.
+- Achieves an efficient solution using preprocessing and greedy extraction.
+- Suitable for large constraints where brute force is impossible.
+
+---
+
+## Approach Summary
+
+1. Build Sparse Tables for maximum and minimum range queries.
+2. Precompute logarithms.
+3. Insert the largest interval for every left boundary into a max heap.
+4. Repeatedly extract the largest available value.
+5. Add it to the answer.
+6. Insert the next shorter interval from the same starting point.
+7. Continue until exactly k values have been selected.
+
+This yields an efficient solution with:
+
+```text
+Time:  O(n log n + k log n)
+Space: O(n log n)
+```
