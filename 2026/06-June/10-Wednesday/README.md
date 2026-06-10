@@ -4,7 +4,7 @@
 
 Given an integer array `nums` and an integer `k`, the value of a subarray is defined as:
 
-value = maximum element - minimum element
+value = maximum element - minimum element 
 
 The objective is to find the sum of the `k` largest subarray values.
 
