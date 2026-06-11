@@ -4,7 +4,7 @@ typedef struct Node {
     int val;
     struct Node* next;
 } Node;
-
+ 
 long long modPow(long long a, long long b) {
     long long res = 1;
 
