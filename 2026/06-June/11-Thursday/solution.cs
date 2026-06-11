@@ -7,7 +7,7 @@ public class Solution
         long res = 1;
 
         while (b > 0)
-        {
+        { 
             if ((b & 1) == 1)
                 res = (res * a) % MOD;
 
