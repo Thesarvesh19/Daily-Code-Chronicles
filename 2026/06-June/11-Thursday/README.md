@@ -5,7 +5,7 @@
 The tree is rooted at node 1.
 
 Let `d` be the maximum depth of the tree.
-
+ 
 Each edge can be assigned either:
 - 1 (odd)
 - 2 (even)
