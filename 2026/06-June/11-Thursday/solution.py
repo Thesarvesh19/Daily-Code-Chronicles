@@ -6,7 +6,7 @@ class Solution:
 
         n = len(edges) + 1
         g = [[] for _ in range(n + 1)]
-
+ 
         for u, v in edges:
             g[u].append(v)
             g[v].append(u)
