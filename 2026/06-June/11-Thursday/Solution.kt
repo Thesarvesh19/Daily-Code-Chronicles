@@ -9,7 +9,7 @@ class Solution {
         while (exp > 0) {
             if ((exp and 1L) == 1L) {
                 res = (res * base) % MOD
-            }
+            } 
 
             base = (base * base) % MOD
             exp = exp shr 1
