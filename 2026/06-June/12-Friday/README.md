@@ -1,91 +1,134 @@
-class Solution {
-    static constexpr int MOD = 1'000'000'007;
-    static constexpr int LOG = 17;
+# 3559. Number of Ways to Assign Edge Weights II
 
-    vector<vector<int>> up;
-    vector<int> depth;
-    vector<vector<int>> g;
+## Problem Statement
 
-    void dfs(int u, int p) {
-        up[0][u] = p;
+You are given an undirected tree with `n` nodes and a list of queries.
 
-        for (int v : g[u]) {
-            if (v == p) continue;
-            depth[v] = depth[u] + 1;
-            dfs(v, u);
-        }
-    }
+For each query `(u, v)`, consider the unique path between nodes `u` and `v`.
 
-    int lca(int a, int b) {
-        if (depth[a] < depth[b]) swap(a, b);
+Each edge on the path can be assigned a weight of either `1` or `2`.
 
-        int diff = depth[a] - depth[b];
-        for (int k = 0; k < LOG; k++) {
-            if (diff & (1 << k))
-                a = up[k][a];
-        }
+Return the number of assignments such that the total weight of the path is odd, modulo `10^9 + 7`.
 
-        if (a == b) return a;
+---
 
-        for (int k = LOG - 1; k >= 0; k--) {
-            if (up[k][a] != up[k][b]) {
-                a = up[k][a];
-                b = up[k][b];
-            }
-        }
+## Approach
 
-        return up[0][a];
-    }
+### Key Observation
 
-    long long modPow(long long a, long long b) {
-        long long res = 1;
-        while (b) {
-            if (b & 1) res = res * a % MOD;
-            a = a * a % MOD;
-            b >>= 1;
-        }
-        return res;
-    }
+A path with `d` edges has `2^d` possible weight assignments.
 
-public:
-    vector<int> assignEdgeWeights(vector<vector<int>>& edges,
-                                  vector<vector<int>>& queries) {
-        int n = edges.size() + 1;
+The path sum is odd when an odd number of edges receive weight `1`.
 
-        g.assign(n + 1, {});
-        depth.assign(n + 1, 0);
-        up.assign(LOG, vector<int>(n + 1, 0));
+For any non-empty path:
 
-        for (auto& e : edges) {
-            int u = e[0], v = e[1];
-            g[u].push_back(v);
-            g[v].push_back(u);
-        }
+- Half of all assignments produce an odd sum.
+- Half produce an even sum.
 
-        dfs(1, 0);
+Therefore:
 
-        for (int k = 1; k < LOG; k++) {
-            for (int v = 1; v <= n; v++) {
-                up[k][v] = up[k - 1][up[k - 1][v]];
-            }
-        }
+```text
+Answer = 2^(d - 1)
+```
 
-        vector<int> ans;
+where `d` is the number of edges in the path.
 
-        for (auto& q : queries) {
-            int u = q[0], v = q[1];
+If:
 
-            if (u == v) {
-                ans.push_back(0);
-                continue;
-            }
+```text
+u == v
+```
 
-            int w = lca(u, v);
-            int dist = depth[u] + depth[v] - 2 * depth[w];
+then the path contains no edges, so the answer is:
 
-            ans.push_back((int)modPow(2, dist - 1));
-        }
+```text
+0
+```
 
-        return ans;
-    }
-};
+---
+
+## Efficient Distance Calculation
+
+To find the distance between two nodes efficiently:
+
+1. Root the tree at node `1`.
+2. Precompute ancestors using Binary Lifting.
+3. Answer Lowest Common Ancestor (LCA) queries in `O(log N)`.
+4. Compute:
+
+```text
+distance(u, v)
+=
+depth[u] + depth[v] - 2 × depth[LCA(u, v)]
+```
+
+5. Return:
+
+```text
+2^(distance - 1) mod (10^9 + 7)
+```
+
+---
+
+## Algorithm
+
+1. Build the tree.
+2. Run DFS to compute depths.
+3. Build Binary Lifting tables.
+4. For each query:
+   - Find LCA.
+   - Compute path length.
+   - If length is `0`, return `0`.
+   - Otherwise return `2^(length - 1) mod M`.
+
+---
+
+## Complexity Analysis
+
+### Preprocessing
+
+```text
+Time:  O(N log N)
+Space: O(N log N)
+```
+
+### Per Query
+
+```text
+Time:  O(log N)
+Space: O(1)
+```
+
+### Total
+
+```text
+Time:  O((N + Q) log N)
+Space: O(N log N)
+```
+
+---
+
+## Data Structures Used
+
+- Adjacency List
+- Depth Array
+- Binary Lifting Table
+- Fast Modular Exponentiation
+
+---
+
+## Key Formula
+
+For a path containing `d > 0` edges:
+
+```text
+Number of Valid Assignments = 2^(d - 1)
+```
+
+because exactly half of all assignments produce an odd path sum.
+
+---
+
+## Tags
+
+Tree, DFS, LCA, Binary Lifting, Math, Modular Arithmetic, Graphs
