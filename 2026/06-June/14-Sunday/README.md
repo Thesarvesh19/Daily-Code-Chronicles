@@ -1,5 +1,5 @@
 # 2130. Maximum Twin Sum of a Linked List
-
+ 
 ## Problem Statement
 
 Given the `head` of a singly linked list with an even number of nodes.
