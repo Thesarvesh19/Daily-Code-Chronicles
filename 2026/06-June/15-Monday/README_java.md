@@ -2,7 +2,7 @@
 
 ## Java Solution
 
-### Approach
+### Approach 
 
 The Fast and Slow Pointer technique helps locate the middle node in a single traversal.
 
