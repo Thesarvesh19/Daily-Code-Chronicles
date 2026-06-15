@@ -6,7 +6,7 @@
 
 Use the Fast & Slow Pointer technique.
 
-- Slow pointer moves one node at a time.
+- Slow pointer moves one node at a time. 
 - Fast pointer moves two nodes at a time.
 - When fast reaches the end, slow will be positioned immediately before the middle node.
 - Remove the middle node by updating the next pointer.
