@@ -8,7 +8,7 @@ class Solution:
     def deleteMiddle(self, head):
         if not head or not head.next:
             return None
-
+ 
         slow = head
         fast = head.next.next
 
