@@ -8,7 +8,7 @@ Traverse the linked list using fast and slow pointers.
 
 ### Complexity Analysis
 
-- Time Complexity: O(n)
+- Time Complexity: O(n) 
 - Space Complexity: O(1)
 
 ### C Code
