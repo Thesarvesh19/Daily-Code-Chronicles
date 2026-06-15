@@ -7,7 +7,7 @@
 You are given the `head` of a singly linked list.
 
 Delete the middle node and return the head of the modified linked list.
-
+ 
 The middle node of a linked list of size `n` is the `⌊n / 2⌋`th node using **0-based indexing**.
 
 ### Examples
