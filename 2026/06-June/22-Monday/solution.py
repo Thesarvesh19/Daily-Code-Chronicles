@@ -4,7 +4,7 @@ class Solution:
         b_count = text.count('b')
         a_count = text.count('a')
         l_count = text.count('l') // 2  # Divided by 2 because we need two 'l's
-        o_count = text.count('o') // 2  # Divided by 2 because we need two 'o's
+        o_count = text.count('o') // 2  # Divided by 2 because we need two 'o's 
         n_count = text.count('n')
         
         # Jo sabse minimum hoga, utne hi complete words ban payenge
