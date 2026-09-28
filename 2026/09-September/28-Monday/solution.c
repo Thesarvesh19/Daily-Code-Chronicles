@@ -12,7 +12,7 @@ int maxDepth(char* s) {
         else if (s[i] == ')') {
             depth--;
         }
-    }
+    } 
 
     return maxDepth;
 }
