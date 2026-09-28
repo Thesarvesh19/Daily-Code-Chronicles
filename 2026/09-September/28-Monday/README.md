@@ -1,7 +1,7 @@
 # LeetCode 1614 - Maximum Nesting Depth of the Parentheses
 
 ## Problem Statement
-
+ 
 A string is a **valid parentheses string (VPS)** if it satisfies one of the following conditions:
 
 - It is an empty string `""`.
