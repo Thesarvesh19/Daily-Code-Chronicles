@@ -1,14 +1,20 @@
+
 class Solution:
-    def maxDepthAfterSplit(self, seq: str) -> list[int]:
-        ans = []
-        depth = 0
+    def isValid(self, s: str) -> bool:
+        stack = []
+        mapping = {
+            ')': '(',
+            '}': '{',
+            ']': '['
+        }
 
-        for ch in seq:
-            if ch == '(':
-                depth += 1
-                ans.append(depth % 2)
+        for char in s:
+            if char in mapping:
+                if not stack or stack[-1] != mapping[char]:
+                    return False
+                stack.pop()
             else:
-                ans.append(depth % 2)
-                depth -= 1
+                stack.append(char)
 
-        return ans
+        return len(stack) == 0
+        
