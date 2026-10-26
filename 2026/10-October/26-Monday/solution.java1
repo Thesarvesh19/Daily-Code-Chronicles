@@ -1,0 +1,51 @@
+class Solution {
+    public int countIslands(int[][] grid, int k) {
+        int m = grid.length;
+        int n = grid[0].length;
+        int count = 0;
+
+        int[] dx = {1, -1, 0, 0};
+        int[] dy = {0, 0, 1, -1};
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 0) {
+                    continue;
+                }
+
+                java.util.Stack<int[]> stack = new java.util.Stack<>();
+                stack.push(new int[]{i, j});
+
+                long total = 0;
+                total += grid[i][j];
+                grid[i][j] = 0;
+
+                while (!stack.isEmpty()) {
+                    int[] cell = stack.pop();
+                    int x = cell[0];
+                    int y = cell[1];
+
+                    for (int d = 0; d < 4; d++) {
+                        int nx = x + dx[d];
+                        int ny = y + dy[d];
+
+                        if (nx >= 0 && nx < m &&
+                            ny >= 0 && ny < n &&
+                            grid[nx][ny] > 0) {
+
+                            total += grid[nx][ny];
+                            grid[nx][ny] = 0;
+                            stack.push(new int[]{nx, ny});
+                        }
+                    }
+                }
+
+                if (total % k == 0) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+}
