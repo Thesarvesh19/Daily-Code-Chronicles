@@ -4,7 +4,7 @@ class Solution {
         int minVal = Integer.MAX_VALUE;
         int sum = 0;
 
-        for (int num : nums) {
+        for (int num : nums) { 
             minVal = Math.min(minVal, num);
             sum += num;
         }
