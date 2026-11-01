@@ -1,6 +1,6 @@
 
 public class Solution {
-    public int MinMoves(int[] nums) {
+    public int MinMoves(int[] nums) { 
         int minVal = int.MaxValue;
         int sum = 0;
 
