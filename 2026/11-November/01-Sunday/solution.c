@@ -6,7 +6,7 @@ int minMoves(int* nums, int numsSize) {
     for (int i = 0; i < numsSize; i++) {
         if (nums[i] < minVal) {
             minVal = nums[i];
-        }
+        } 
         sum += nums[i];
     }
 
