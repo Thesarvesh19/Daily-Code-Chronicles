@@ -4,48 +4,58 @@ public:
         int n = parent.size();
         vector<vector<int>> adj(n);
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++)
             adj[parent[i]].push_back(i);
-        }
 
         vector<int> newParent = parent;
-        vector<int> ancestors;
+        vector<int> last(26, -1);
 
-        function<void(int)> dfs = [&](int u) {
-            ancestors.push_back(u);
+        vector<tuple<int, bool, int>> st;
+        st.push_back({0, true, -1});
 
-            for (int v : adj[u]) {
-                for (int i = (int)ancestors.size() - 2; i >= 0; i--) {
-                    int a = ancestors[i];
-                    if (s[a] == s[v]) {
-                        newParent[v] = a;
-                        break;
-                    }
-                }
-                dfs(v);
+        while (!st.empty()) {
+            auto [u, entering, prev] = st.back();
+            st.pop_back();
+
+            int c = s[u] - 'a';
+
+            if (entering) {
+                prev = last[c];
+
+                if (u != 0 && last[c] != -1)
+                    newParent[u] = last[c];
+
+                last[c] = u;
+
+                st.push_back({u, false, prev});
+
+                for (int i = (int)adj[u].size() - 1; i >= 0; i--)
+                    st.push_back({adj[u][i], true, -1});
+            } else {
+                last[c] = prev;
             }
-
-            ancestors.pop_back();
-        };
-
-        dfs(0);
-
-        vector<vector<int>> newAdj(n);
-        for (int i = 1; i < n; i++) {
-            newAdj[newParent[i]].push_back(i);
         }
 
-        vector<int> ans(n, 0);
+        vector<vector<int>> newAdj(n);
+        for (int i = 1; i < n; i++)
+            newAdj[newParent[i]].push_back(i);
 
-        function<int(int)> calc = [&](int u) {
-            ans[u] = 1;
-            for (int v : newAdj[u]) {
-                ans[u] += calc(v);
-            }
-            return ans[u];
-        };
+        vector<int> order = {0};
 
-        calc(0);
+        for (int i = 0; i < (int)order.size(); i++) {
+            int u = order[i];
+            for (int v : newAdj[u])
+                order.push_back(v);
+        }
+
+        vector<int> ans(n, 1);
+
+        for (int i = (int)order.size() - 1; i >= 0; i--) {
+            int u = order[i];
+            for (int v : newAdj[u])
+                ans[u] += ans[v];
+        }
+
         return ans;
     }
 };
